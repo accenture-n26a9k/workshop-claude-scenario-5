@@ -4,7 +4,7 @@ Type a message, see the routing decision, category, confidence, and
 specialist output. Empty line or Ctrl-C/Ctrl-D to exit.
 
 Usage:
-    python demo/console.py
+    python src/demo/console.py
 """
 
 from __future__ import annotations
@@ -18,7 +18,7 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8")
 
-sys.path.insert(0, str(Path(__file__).parents[1]))
+sys.path.insert(0, str(Path(__file__).parents[2]))
 
 from src.coordinator.agent import process
 

@@ -71,6 +71,66 @@
       "question": "What is the escalation path for a safety incident?",
       "answer": "1) Report immediately to the ops channel. 2) Call the safety lead direct line: ext. 911. 3) Do NOT attempt to handle a safety incident alone. The agent will page the safety lead automatically when safety keywords are detected.",
       "tags": ["safety", "escalation", "incident", "emergency", "procedure"]
+    },
+    {
+      "id": "faq013",
+      "question": "What is the crew Wi-Fi password?",
+      "answer": "Crew Wi-Fi SSID: 'Staff-Net'. Password is printed on the back of your badge. Do NOT share with attendees — attendees use 'Guest-Event-Wifi' (no password, captive portal).",
+      "tags": ["wifi", "wi-fi", "internet", "network", "password", "ssid", "staff-net"]
+    },
+    {
+      "id": "faq014",
+      "question": "Where do attendees pick up their badges?",
+      "answer": "Attendee registration is the main Public Entrance, Level 1 (not the crew Side Entrance). Open 8:00am both days. Kiosks are self-service; staffed help desk next to the coffee station.",
+      "tags": ["attendee", "registration", "public", "main entrance", "badge pickup"]
+    },
+    {
+      "id": "faq015",
+      "question": "Where is lost and found?",
+      "answer": "Lost and found is at the Staff Check-In desk, Side Entrance Level 1. Items held for 30 days. Electronics and ID documents are logged separately — ask the desk lead.",
+      "tags": ["lost", "found", "lost and found", "missing", "items"]
+    },
+    {
+      "id": "faq016",
+      "question": "Where is the lactation / nursing room?",
+      "answer": "Lactation room is Level 1, Room 107 (next to first-aid). Private, lockable, with fridge and sink. Available to attendees and crew — no booking needed. Cleaning between uses by request via ops channel.",
+      "tags": ["lactation", "nursing", "baby", "breastfeeding", "pumping", "room 107", "parents"]
+    },
+    {
+      "id": "faq017",
+      "question": "Are sessions being recorded?",
+      "answer": "Keynotes and main-hall sessions are recorded and published post-event. Workshops and breakout rooms are NOT recorded. Speakers must consent — check the session's schedule entry for a 'recording' flag before confirming to a speaker.",
+      "tags": ["recording", "recorded", "video", "session", "publish", "consent"]
+    },
+    {
+      "id": "faq018",
+      "question": "Where are the accessible and all-gender restrooms?",
+      "answer": "Accessible restrooms: Level 1 near Hall A, Level 2 near Room 205. All-gender restrooms: Level 1 near the main entrance, Level B1 near the canteen. Maps posted at every stairwell.",
+      "tags": ["restroom", "bathroom", "toilet", "accessible", "all-gender", "ada", "wheelchair"]
+    },
+    {
+      "id": "faq019",
+      "question": "Where is the nearest ATM or cash machine?",
+      "answer": "Nearest ATM is in the Level 1 lobby by the main public entrance. There is NO ATM on the crew side — all crew purchases in the Staff Canteen are cashless (tap card or phone).",
+      "tags": ["atm", "cash", "money", "machine", "cashless"]
+    },
+    {
+      "id": "faq020",
+      "question": "Where are the water refill stations?",
+      "answer": "Water refill stations: Level 1 by Hall A entrance, Level 2 corridor outside Room 205, Level B1 canteen. Reusable bottles were distributed at crew check-in. Single-use cups available at catering only.",
+      "tags": ["water", "refill", "drink", "bottle", "hydration", "tap"]
+    },
+    {
+      "id": "faq021",
+      "question": "What time does teardown start?",
+      "answer": "Day 2 teardown begins 30 minutes after the closing keynote ends (approx. 5:30pm). Crew should not leave earlier than their team lead releases them. Final sign-out at the Staff Check-In desk — timesheet is pre-filled.",
+      "tags": ["teardown", "breakdown", "end of event", "closing", "sign out", "timesheet"]
+    },
+    {
+      "id": "faq022",
+      "question": "Is there translator or interpreter support?",
+      "answer": "Live interpreters (EN/ES/FR) are booked only for the Day 1 keynote. For any other session, attendees can use the Event App's real-time caption feature. Crew needing language support should flag it in #event-ops and tag @translations.",
+      "tags": ["translator", "interpreter", "language", "captions", "spanish", "french"]
     }
   ]
 }
