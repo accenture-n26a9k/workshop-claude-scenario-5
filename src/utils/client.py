@@ -2,8 +2,8 @@
 Client factory. Uses AnthropicBedrock when AWS_BEARER_TOKEN_BEDROCK is set,
 falls back to standard Anthropic client for ANTHROPIC_API_KEY.
 
-Bearer token injection: httpx request hook overrides the Authorization header
-AFTER botocore SigV4 signing, so the bearer token wins.
+AnthropicBedrock(api_key=bearer_token) uses the token directly as
+Authorization: Bearer — no SigV4 signing needed.
 """
 
 from __future__ import annotations
@@ -11,7 +11,6 @@ from __future__ import annotations
 import os
 
 import anthropic
-import httpx
 
 # eu-north-1 cross-region inference profile IDs
 SONNET_MODEL = "eu.anthropic.claude-3-5-sonnet-20241022-v2:0"
@@ -21,20 +20,9 @@ AWS_REGION = "eu-north-1"
 
 def _make_bedrock_client() -> anthropic.AnthropicBedrock:
     bearer_token = os.environ["AWS_BEARER_TOKEN_BEDROCK"]
-
-    def _inject_bearer(request: httpx.Request) -> None:
-        request.headers["Authorization"] = f"Bearer {bearer_token}"
-
-    http_client = httpx.Client(
-        event_hooks={"request": [_inject_bearer]},
-        timeout=60,
-    )
-
     return anthropic.AnthropicBedrock(
         aws_region=AWS_REGION,
-        aws_access_key="dummy",
-        aws_secret_key="dummy",
-        http_client=http_client,
+        api_key=bearer_token,
     )
 
 
