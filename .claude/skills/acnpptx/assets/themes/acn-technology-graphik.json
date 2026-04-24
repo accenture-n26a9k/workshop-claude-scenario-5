@@ -1,0 +1,178 @@
+{
+  "name": "ACN Technology Graphik",
+  "description": "Accenture Technology template — Graphik font, 41 layouts, black/white covers, numbered section dividers, GTS branding",
+  "template": "assets/masters/acn-technology-graphik.pptx",
+  "cover_text_color": "WHITE",
+  "layout_indices": {
+    "cover": 4,
+    "cover_black1": 4,
+    "cover_black2_image": 5,
+    "cover_black3_image": 6,
+    "cover_white1": 7,
+    "cover_white2_image": 8,
+    "cover_white3_image": 9,
+    "section_image_gradient_dark": 10,
+    "section_image_gradient_core": 11,
+    "section_numbered": 12,
+    "agenda": 13,
+    "content": 38,
+    "content_1col": 14,
+    "content_1col_dark": 15,
+    "content_1col_subtitle": 16,
+    "content_headline_gt": 17,
+    "content_2col": 18,
+    "content_2col_subtitle": 19,
+    "content_2col_headings": 20,
+    "content_3col": 21,
+    "content_4col": 22,
+    "content_5icons": 23,
+    "content_5icons_alt": 24,
+    "team_4box": 25,
+    "team_6_light": 26,
+    "team_6_dark": 27,
+    "team_8_text": 28,
+    "split_image_right": 29,
+    "split_image_left": 30,
+    "quote_image": 31,
+    "quote_image_alt": 32,
+    "stats_1": 33,
+    "stats_2": 34,
+    "key_message_gradient_dark": 35,
+    "key_message_mid_purple": 36,
+    "full_bleed_image": 37,
+    "headline_only": 38,
+    "headline_subtitle": 39,
+    "blank": 40,
+    "section": 12
+  },
+  "layout_notes": {
+    "cover": {
+      "background": "black",
+      "note": "Layout 4: 'Title: Black1'. Black background — use WHITE text. idx=0 center title @0.42in, idx=1 subtitle @4.38in, idx=2 date @5.59in, idx=12 presenter @5.85in.",
+      "placeholders": {
+        "idx_0":  {"role": "title",     "note": "main title — WHITE, bold, CENTER_TITLE"},
+        "idx_1":  {"role": "subtitle",  "note": "subtitle — WHITE"},
+        "idx_2":  {"role": "date",      "note": "date — WHITE, small"},
+        "idx_12": {"role": "presenter", "note": "presenter name — WHITE"}
+      }
+    },
+    "cover_white1": {
+      "background": "white",
+      "note": "Layout 7: 'Title: White1'. White background — use BLACK text. Same ph structure as cover_black1.",
+      "placeholders": {
+        "idx_0":  {"role": "title",     "note": "main title — BLACK, bold, CENTER_TITLE"},
+        "idx_1":  {"role": "subtitle",  "note": "subtitle — TEXT_BODY"},
+        "idx_2":  {"role": "date",      "note": "date — MID_GRAY, small"},
+        "idx_12": {"role": "presenter", "note": "presenter name — TEXT_BODY"}
+      }
+    },
+    "content": {
+      "title_idx": 0,
+      "title_y": 0.42,
+      "title_h": 0.88,
+      "breadcrumb_idx": null,
+      "breadcrumb_y": 0.08,
+      "breadcrumb_h": 0.27,
+      "message_line_idx": null,
+      "message_line_y": 0.95,
+      "message_line_h": 0.45,
+      "content_area_y": 1.50,
+      "note": "Layout 38: 'Long Headline Only'. Title idx=0 at y=0.42 (0.88in tall). No breadcrumb placeholder — add_breadcrumb creates a textbox at y=0.08. No body/content placeholder — clean canvas for pattern shapes. Date idx=10, SlideNumber idx=11."
+    },
+    "content_1col": {
+      "note": "Layout 14: 'Long Headline and 1 Column'. Title idx=0 @0.42in, Content idx=10 @1.50in (12.50x5.40in). Use for text-heavy single-column layouts."
+    },
+    "section": {
+      "background": "gradient_mid_purple",
+      "note": "Layout 12: 'Section Divider - Numbered, Gradient Mid Purple'. idx=10 section number @0.91in (large text), idx=0 title @4.25in, idx=15 description @4.25in right side.",
+      "placeholders": {
+        "idx_10": {"role": "section_number", "note": "e.g. '01' — large, WHITE"},
+        "idx_0":  {"role": "title",          "note": "section title — WHITE"},
+        "idx_15": {"role": "description",    "note": "section description — WHITE, right column"}
+      }
+    },
+    "agenda": {
+      "note": "Layout 13: 'Agenda'. Left: title idx=0 @1.50in + description idx=14 @2.39in. Right: 3-column grid of numbered items. Col1 numbers idx=31-38 @4.84in, labels idx=16-30(even) @5.43in. Col2 numbers idx=47-54 @9.10in, labels idx=39-46 @9.69in. Max 16 items (8 per column)."
+    },
+    "salutation": {
+      "note": "Layout 0-3: Salutation/GTS closing slides. idx=0 title only. 0=GTS centered, 1=Logo centered, 2=GTS Keyline, 3=GTS left+image."
+    }
+  },
+  "tokens": {
+    "primary":        "#A100FF",
+    "primary_medium": "#7500C0",
+    "primary_light":  "#BE82FF",
+    "primary_dark":   "#460073",
+    "accent_lavender": "#DCAFFF",
+    "accent_plum":    "#B455AA",
+    "background":     "#FFFFFF",
+    "surface":        "#E6E6DC",
+    "text_heading":   "#000000",
+    "text_body":      "#333333",
+    "text_muted":     "#96968C",
+    "border":         "#CFCFCF"
+  },
+  "theme_xml_colors": {
+    "dk1": "#000000",
+    "lt1": "#FFFFFF",
+    "dk2": "#96968C",
+    "lt2": "#E6E6DC",
+    "accent1": "#A100FF",
+    "accent2": "#7500C0",
+    "accent3": "#460073",
+    "accent4": "#B455AA",
+    "accent5": "#BE82FF",
+    "accent6": "#DCAFFF",
+    "hlink": "#A100FF",
+    "folHlink": "#7500C0"
+  },
+  "fonts": {
+    "major_latin": "Graphik",
+    "minor_latin": "Graphik",
+    "major_ea": "",
+    "minor_ea": ""
+  },
+  "all_layouts": [
+    {"idx":  0, "name": "Salutation-GTS centered",                    "category": "closing"},
+    {"idx":  1, "name": "Salutation-Logo centered",                   "category": "closing"},
+    {"idx":  2, "name": "Salutation-GTS Keyline",                     "category": "closing"},
+    {"idx":  3, "name": "Salutation-GTS left-image bkgnd",            "category": "closing"},
+    {"idx":  4, "name": "Title: Black1",                              "category": "cover"},
+    {"idx":  5, "name": "Title: Black2+Image",                        "category": "cover"},
+    {"idx":  6, "name": "Title: Black3+Image",                        "category": "cover"},
+    {"idx":  7, "name": "Title: White1",                              "category": "cover"},
+    {"idx":  8, "name": "Title: White2+Image",                        "category": "cover"},
+    {"idx":  9, "name": "Title: White3+Image",                        "category": "cover"},
+    {"idx": 10, "name": "Section Divider with Image - Gradient Dark", "category": "section"},
+    {"idx": 11, "name": "Section Divider with Image - Gradient Core", "category": "section"},
+    {"idx": 12, "name": "Section Divider - Numbered, Gradient Mid Purple", "category": "section"},
+    {"idx": 13, "name": "Agenda",                                     "category": "agenda"},
+    {"idx": 14, "name": "Long Headline and 1 Column",                 "category": "content"},
+    {"idx": 15, "name": "Long Headline and 1 Column Dark",            "category": "content"},
+    {"idx": 16, "name": "Long Headline-subtitle and 1 Column",        "category": "content"},
+    {"idx": 17, "name": "Columns 2 - Headline + GT Sectra",           "category": "content"},
+    {"idx": 18, "name": "Long Headline and 2 Columns",                "category": "content"},
+    {"idx": 19, "name": "Long Headline-subtitle and 2 Columns",       "category": "content"},
+    {"idx": 20, "name": "Long Headline-subtitle and 2 Headings/Cols", "category": "content"},
+    {"idx": 21, "name": "Long Headline and 3 Columns",                "category": "content"},
+    {"idx": 22, "name": "Long Headline and 4 Columns",                "category": "content"},
+    {"idx": 23, "name": "Long Headline and 5 icons",                  "category": "content"},
+    {"idx": 24, "name": "(Alt) Long Headline and 5 icons",            "category": "content"},
+    {"idx": 25, "name": "Long Headline-Team 4-Box Shadow",            "category": "team"},
+    {"idx": 26, "name": "Long Headline-Team 6-Light",                 "category": "team"},
+    {"idx": 27, "name": "Long Headline-Team 6-Dark",                  "category": "team"},
+    {"idx": 28, "name": "Long Headline-Team 8-Text",                  "category": "team"},
+    {"idx": 29, "name": "Short Headline and Image 1",                 "category": "content"},
+    {"idx": 30, "name": "Short Headline and Image 2",                 "category": "content"},
+    {"idx": 31, "name": "Quote + image",                              "category": "quote"},
+    {"idx": 32, "name": "Quote + image (alternative)",                "category": "quote"},
+    {"idx": 33, "name": "Statistics 1",                               "category": "stats"},
+    {"idx": 34, "name": "Statistics 2",                               "category": "stats"},
+    {"idx": 35, "name": "Key Message Gradient Dark 1",                "category": "key_message"},
+    {"idx": 36, "name": "Key Message Mid Purple",                     "category": "key_message"},
+    {"idx": 37, "name": "Full Bleed Image",                           "category": "content"},
+    {"idx": 38, "name": "Long Headline Only",                         "category": "content"},
+    {"idx": 39, "name": "Long Headline-subtitle",                     "category": "content"},
+    {"idx": 40, "name": "Blank",                                      "category": "blank"}
+  ]
+}

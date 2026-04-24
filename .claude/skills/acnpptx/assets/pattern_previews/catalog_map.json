@@ -1,0 +1,332 @@
+{
+  "A": {
+    "name": "Title + Body",
+    "filename": "A.png",
+    "category": "text",
+    "slide_index": 2
+  },
+  "B": {
+    "name": "Two Column",
+    "filename": "B.png",
+    "category": "grid",
+    "slide_index": 3
+  },
+  "section": {
+    "name": "セクション区切り",
+    "filename": "section.png",
+    "category": "special",
+    "slide_index": 4
+  },
+  "D": {
+    "name": "Key Message",
+    "filename": "D.png",
+    "category": "text",
+    "slide_index": 5
+  },
+  "E": {
+    "name": "Bullet with Accent Mark",
+    "filename": "E.png",
+    "category": "text",
+    "slide_index": 6
+  },
+  "F": {
+    "name": "Card Grid 2x2",
+    "filename": "F.png",
+    "category": "grid",
+    "slide_index": 7
+  },
+  "G": {
+    "name": "Table",
+    "filename": "G.png",
+    "category": "data",
+    "slide_index": 8
+  },
+  "H": {
+    "name": "Circular Flow",
+    "filename": "H.png",
+    "category": "flow",
+    "slide_index": 9
+  },
+  "I": {
+    "name": "Agenda",
+    "filename": "I.png",
+    "category": "special",
+    "slide_index": 10
+  },
+  "J": {
+    "name": "KPI / Metrics",
+    "filename": "J.png",
+    "category": "data",
+    "slide_index": 11
+  },
+  "J-hero": {
+    "name": "Hero Stat",
+    "filename": "J-hero.png",
+    "category": "data",
+    "slide_index": 12
+  },
+  "K": {
+    "name": "Three Column",
+    "filename": "K.png",
+    "category": "grid",
+    "slide_index": 13
+  },
+  "K-badge": {
+    "name": "Numbered Badge",
+    "filename": "K-badge.png",
+    "category": "grid",
+    "slide_index": 14
+  },
+  "L": {
+    "name": "Do / Don't",
+    "filename": "L.png",
+    "category": "special",
+    "slide_index": 15
+  },
+  "M": {
+    "name": "Chart (Column)",
+    "filename": "M.png",
+    "category": "data",
+    "slide_index": 16
+  },
+  "M-bar": {
+    "name": "Bar Chart",
+    "filename": "M-bar.png",
+    "category": "data",
+    "slide_index": 17
+  },
+  "M-line": {
+    "name": "Line Chart",
+    "filename": "M-line.png",
+    "category": "data",
+    "slide_index": 18
+  },
+  "M-pie": {
+    "name": "Pie Chart",
+    "filename": "M-pie.png",
+    "category": "data",
+    "slide_index": 19
+  },
+  "M-stacked": {
+    "name": "Stacked Column",
+    "filename": "M-stacked.png",
+    "category": "data",
+    "slide_index": 20
+  },
+  "M-area": {
+    "name": "Area Chart",
+    "filename": "M-area.png",
+    "category": "data",
+    "slide_index": 21
+  },
+  "M-doughnut": {
+    "name": "Doughnut",
+    "filename": "M-doughnut.png",
+    "category": "data",
+    "slide_index": 22
+  },
+  "M-combination": {
+    "name": "Combination",
+    "filename": "M-combination.png",
+    "category": "data",
+    "slide_index": 23
+  },
+  "N": {
+    "name": "Team Introduction",
+    "filename": "N.png",
+    "category": "special",
+    "slide_index": 24
+  },
+  "N-org": {
+    "name": "Org Chart",
+    "filename": "N-org.png",
+    "category": "special",
+    "slide_index": 25
+  },
+  "P": {
+    "name": "Chevron Flow",
+    "filename": "P.png",
+    "category": "flow",
+    "slide_index": 26
+  },
+  "P-labeled": {
+    "name": "Labeled-Chevron",
+    "filename": "P-labeled.png",
+    "category": "flow",
+    "slide_index": 27
+  },
+  "P-multirow": {
+    "name": "Multi-row Flow",
+    "filename": "P-multirow.png",
+    "category": "flow",
+    "slide_index": 28
+  },
+  "P-iterative": {
+    "name": "Iterative Loop",
+    "filename": "P-iterative.png",
+    "category": "flow",
+    "slide_index": 29
+  },
+  "Q": {
+    "name": "Icon Grid",
+    "filename": "Q.png",
+    "category": "grid",
+    "slide_index": 30
+  },
+  "R": {
+    "name": "Split Visual",
+    "filename": "R.png",
+    "category": "special",
+    "slide_index": 31
+  },
+  "S": {
+    "name": "Framework Matrix",
+    "filename": "S.png",
+    "category": "data",
+    "slide_index": 32
+  },
+  "T": {
+    "name": "Two-Section with Arrow",
+    "filename": "T.png",
+    "category": "flow",
+    "slide_index": 33
+  },
+  "T-3section": {
+    "name": "3-Section Cascade",
+    "filename": "T-3section.png",
+    "category": "flow",
+    "slide_index": 34
+  },
+  "U": {
+    "name": "Three Column + Footer",
+    "filename": "U.png",
+    "category": "grid",
+    "slide_index": 35
+  },
+  "V": {
+    "name": "Numbered Card Grid",
+    "filename": "V.png",
+    "category": "grid",
+    "slide_index": 36
+  },
+  "W": {
+    "name": "Open-Canvas KPI",
+    "filename": "W.png",
+    "category": "data",
+    "slide_index": 37
+  },
+  "W-grid": {
+    "name": "2x2 Grid KPI",
+    "filename": "W-grid.png",
+    "category": "data",
+    "slide_index": 38
+  },
+  "X": {
+    "name": "Step Chart",
+    "filename": "X.png",
+    "category": "flow",
+    "slide_index": 39
+  },
+  "Y": {
+    "name": "Arrow Roadmap",
+    "filename": "Y.png",
+    "category": "flow",
+    "slide_index": 40
+  },
+  "Z": {
+    "name": "Maturity Model",
+    "filename": "Z.png",
+    "category": "structure",
+    "slide_index": 41
+  },
+  "AA": {
+    "name": "2x2 Quadrant Matrix",
+    "filename": "AA.png",
+    "category": "structure",
+    "slide_index": 42
+  },
+  "AB": {
+    "name": "Issue Tree",
+    "filename": "AB.png",
+    "category": "structure",
+    "slide_index": 43
+  },
+  "AB-vertical": {
+    "name": "Vertical Tree",
+    "filename": "AB-vertical.png",
+    "category": "structure",
+    "slide_index": 44
+  },
+  "AC": {
+    "name": "Stacked Pyramid",
+    "filename": "AC.png",
+    "category": "structure",
+    "slide_index": 45
+  },
+  "AD": {
+    "name": "Program Status Dashboard",
+    "filename": "AD.png",
+    "category": "structure",
+    "slide_index": 46
+  },
+  "AE": {
+    "name": "Venn Diagram",
+    "filename": "AE.png",
+    "category": "structure",
+    "slide_index": 47
+  },
+  "AF": {
+    "name": "Pull Quote",
+    "filename": "AF.png",
+    "category": "text",
+    "slide_index": 48
+  },
+  "AG": {
+    "name": "Architecture Diagram",
+    "filename": "AG.png",
+    "category": "structure",
+    "slide_index": 49
+  },
+  "AH": {
+    "name": "Decision Matrix",
+    "filename": "AH.png",
+    "category": "data",
+    "slide_index": 50
+  },
+  "AI": {
+    "name": "Evaluation Scorecard",
+    "filename": "AI.png",
+    "category": "data",
+    "slide_index": 51
+  },
+  "AJ": {
+    "name": "Radar Chart",
+    "filename": "AJ.png",
+    "category": "data",
+    "slide_index": 52
+  },
+  "AK": {
+    "name": "Calendar",
+    "filename": "AK.png",
+    "category": "special",
+    "slide_index": 53
+  },
+  "AL": {
+    "name": "Business Model Canvas",
+    "filename": "AL.png",
+    "category": "structure",
+    "slide_index": 54
+  },
+  "AM": {
+    "name": "Interview Card",
+    "filename": "AM.png",
+    "category": "text",
+    "slide_index": 55
+  },
+  "AN": {
+    "name": "Layer Diagram",
+    "filename": "AN.png",
+    "category": "structure",
+    "slide_index": 56
+  }
+}

@@ -1,0 +1,87 @@
+---
+name: common-mistakes
+description: "Common mistakes in the PPTX skill and how to fix them. Always review before generating code."
+---
+
+## Common Mistakes
+
+| Issue | Fix |
+|-------|-----|
+| Calling `select_theme()` / `theme_selector.py` in a script | **Forbidden.** Tkinter dialogs cannot return results to Claude Code. Confirm theme selection via **AskUserQuestion** first, then hardcode `load_theme("name")` |
+| Calling `load_theme` before `set_lang` | **Forbidden.** `set_lang()` overwrites `TEMPLATE_PATH` to `slide-master.pptx`, erasing `load_theme` settings. **Always call `load_theme` after setup** |
+| Manually adding logo/GT symbol | **Forbidden.** These are embedded in the slide master. Calling `add_logo()` / `add_gt_symbol()` causes duplicate placement and text overlap |
+| GT overlapping text | Remove `add_gt_symbol()` calls. The slide master handles automatic placement |
+| Adding a purple background rectangle to the cover | **Forbidden.** Use `add_cover_slide()` and the master provides the background. Adding a rectangle hides the logo/GT |
+| Using `add_slide()` for the cover | Forbidden. Always use `add_cover_slide()` for covers |
+| Rounded shapes | `MSO_AUTO_SHAPE_TYPE.RECTANGLE` only |
+| Old purple color | Use `CORE_PURPLE` (#A100FF), not #7E00FF |
+| SVG import | Not needed -- use native shapes or brand asset PNGs |
+| ALL CAPS headline | Use sentence case |
+| GT used as arrow | GT symbol is brand decoration, not directional |
+| No footer | `set_footer(slide)` on every content slide |
+| Text in boxes/cards is 12pt/13pt | Minimum 14pt inside boxes, cards, and table cells. 12pt is for external captions only |
+| Placeholder text showing ("Place subtitle here" / "Click to add text") | Loop through all cover placeholders and fill them. Passing empty string `""` to `add_breadcrumb(slide, "")` shows hint text. Section divider breadcrumbs must always include the section name |
+| Placing title directly with textbox | Forbidden. Use `add_title(slide, "Title")` |
+| Placing breadcrumb directly with textbox | Forbidden. Use `add_breadcrumb(slide, "Section > Topic")` |
+| Not explicitly setting message line font size | `add_message_line()` auto-sets 18pt. When writing to a placeholder, always set `run.font.size = Pt(18)` explicitly. Omitting it defaults to the layout inherited value (e.g., 14pt) |
+| Message line in polite form | Write in declarative style -- never use polite endings |
+| Message line is too long | Keep it under 60 characters, single line. Exceeding this causes wrapping that overlaps the content area |
+| Shapes overlapping the message line | All content elements must have y coordinate >= CONTENT_Y (`layout_notes.content.content_area_y`, or `CY=1.50"` if undefined). Verify visually with thumbnail |
+| 13pt font | Forbidden. Use 12pt for notes/captions, 14pt for body |
+| Font < 12pt | Minimum is 12pt for all visible text except footer (8pt) |
+| Agenda badge wraps "01" | Set `tf.word_wrap = False` and zero out bodyPr insets (lIns/rIns/tIns/bIns="0") |
+| Using use_pentagon_first=False in chevron | **Forbidden**. Always use `use_pentagon_first=True` (default). Left end = pentagon, rest = chevron is the correct style |
+| Splitting chevron into multiple rows (2 tiers) | **Forbidden**. `add_chevron_flow` is single-row only. If too many items, reduce font size or reduce item count |
+| Want triangle-style arrows | `add_chevron_flow(..., shape_style='box_triangle')` gives rectangle + triangle separator |
+| Chart wrong colors | Charts auto-apply theme palette via helpers.py; override via series.format.fill |
+| Icon not found | Run `icon_utils.build_icon_index()` first, or check keyword spelling |
+| Outline skipped | Always generate and confirm outline before writing slide code |
+| Title wraps to 2 lines (cover and content) | Reducing font size is forbidden. **If it fits on one line, shorten the wording** (guideline: under 26 full-width characters). **If 2 lines are unavoidable, insert a manual line break at a natural phrase boundary** (auto-wrapping cuts mid-word). Use `tf.add_paragraph()` for the second line and match font settings exactly with the first line |
+| Trying to create alternating-direction chevrons (left-right-left) | Not supported. Use `add_chevron_flow(..., shape_style='chevron', use_pentagon_first=True)` with all-rightward flow |
+| box_triangle produces left-pointing triangle | **Strictly forbidden**. Separator is always right-pointing. Internally uses `rotation_deg=-90` (OOXML 90 degrees CW). `rotation_deg=+90` produces 270 degrees CW = 90 degrees CCW = LEFT-pointing |
+| No space between box and triangle in box_triangle | Specify `gap=0.10` or more. `max(gap, 0.10)` guarantees the minimum |
+| Want to change triangle size in box_triangle | Separator auto-sizes to height:width = 1:3 (box full height x 1/3 width). Scales with the `h` parameter (box height), no individual adjustment needed |
+| Using WHITE / LIGHT_PURPLE text on white-background cover | **Forbidden**. On white backgrounds, use BLACK / TEXT_BODY for all text. WHITE text is invisible |
+| Column header labels wrap to 2 lines ("MCP" -> "MC\nP") | Set `tf.word_wrap = False` and make box width >= character count x 0.20" |
+| Do/Don't labels wrap to 2 lines | Set `tf.word_wrap = False` on the label textbox. Width must be 2.50" or more (1.50" causes wrapping with mixed text) |
+| Icon Grid shows empty labels without icons | Keyword does not exist in icon_index.json. Pre-verify with `find_icons(keyword)`. Alternatives: security -> "security"/"lock", AI -> "robot"/"ai", team -> "person"/"team" |
+| Detail text below chevron flow overlaps with shapes / excessive whitespace above and below | **Use the vertical centering formula**: `FLOW_Y = CY + (AH - FLOW_H - GAP - DETAIL_H) / 2`, `DETAIL_Y = FLOW_Y + FLOW_H + GAP`. Using fixed `y=CY` pushes content to the top, leaving empty space at the bottom. Verify with thumbnail |
+| Agenda not immediately after cover | **Forbidden**. If an agenda exists, it must be slide #2 (right after the cover) |
+| Hint text appears after `remove_placeholder()` | Removing exposes the layout-side ghost. Instead of removing, clear with `ph.text = ""` |
+| Using `CY=1.50"` / `MSG_Y` without matching the template | These are defaults. If the template defines `layout_notes.content.content_area_y`, set `CONTENT_Y` to that value. Also use the layout_notes placeholder idx for message line if defined |
+| Extracted theme colors don't match expectations (e.g., Fiori returns blue instead of cyan) | python-pptx API's `fill.fore_color.rgb` silently raises `AttributeError` on `schemeClr` and cannot pick up colors. Re-extract with `master_to_theme.py` (lxml + `_resolve_color_el`). Update to latest version if using old scripts |
+| `text_body` / `text_muted` contain high-saturation colors (red-purple, cyan, etc.) | Body/muted tokens are designed to select only gray tones with saturation < 0.20, even if accent/warning colors are used in text. If contamination occurs, update `master_to_theme.py` to the latest version |
+| Subtitle/date invisible on white-background template covers | Check cover background color with `thumbnail.py` before choosing text color. On white backgrounds, use BLACK / TEXT_BODY / MID_GRAY for **all** text including title, subtitle, and date. WHITE and LIGHT_PURPLE are invisible on white (dates are easily missed when "only changing colors") |
+| Cover is blank / placeholder hints remain after retheme | `retheme.py` selects target layouts by placeholder type and auto-deletes empty placeholders. If this happens, verify running with `PYTHONUTF8=1`. If still present, check with thumbnail.py and fix manually |
+| Message line appears at slide top after retheme | If the old theme placed message line at idx=11, it maps to the target idx=11 (breadcrumb position y=0.08") -- an old bug. Latest `retheme.py` transplants idx=11 as free-floating at its original coordinates for content slides. Update if using an old version |
+| Section divider becomes content layout after retheme | If the source PPTX layout name contains keywords like "section" / "divider", it auto-maps to section layout. If the name lacks these keywords, it is treated as content. In that case, manually change the slide layout, or the DARKEST_PURPLE background rectangle from the section divider remains and is visually acceptable |
+| Alternating colors (tables, cards, badges, etc.) | **Strictly forbidden**. Never vary colors by index parity or sequence. Same elements use same colors: table data rows are solid WHITE, card/panel backgrounds are solid OFF_WHITE, agenda badges are solid DARKEST_PURPLE (only active = CORE_PURPLE). Alternating CORE_PURPLE and DARKEST_PURPLE on card backgrounds is also forbidden |
+| Drawing a horizontal line between lead and body | **Forbidden**. The vertical gap between title/message line and content is the natural separator. Do not add any lines with `add_connector`, `add_divider_line`, or `add_shape` |
+| Drawing a horizontal line above table header | **Forbidden**. The purple header row itself serves as the visual boundary. Adding a line creates a double border |
+| Not calling `make_closing_slide()` | Every deck must end with `make_closing_slide(prs)` -> `strip_sections(prs)` -> `prs.save()` |
+| Not calling `strip_sections()` | Always call before `prs.save()`. Otherwise PowerPoint section headers remain in the delivered file |
+| Not checking placeholder residuals with `markitdown` | Step 9 requires running `markitdown output.pptx` and verifying no hint text like "Click to add title" remains |
+| Table/chart width is less than CW, leaving large right-side whitespace | **Always create tables and charts with `w=CW`**. If there are few columns, expand column widths evenly to fill CW. `verify_pptx.py` detects widths under 80% of CW as WARNING. **Pie charts are no exception -- always use `w=CW`** -- narrow values like `w=6.50` are forbidden. Legends are auto-placed within the chart area |
+| Content biased to the left side with empty right side | If content width is under 70% of CW, expand the width or center it. `verify_pptx.py` auto-detects this |
+| Overusing section dividers (Pattern C) | **Only use section dividers when 3+ content slides follow.** If only 1-2 slides follow, breadcrumbs suffice for section indication. Decks of 12 slides or fewer should have at most 2 section dividers. Section dividers are "empty slides" with only a title and subtitle, so overuse reduces information density and creates redundancy |
+| Repeating the same pattern | **Each pattern should be used only once per deck as a rule.** Check for pattern duplication at the outline stage and substitute with a different pattern if duplicated. Mix text-based, shape-based, data-based, and grid-based patterns for balance. A monotonous deck fails to meet consultant quality |
+| Slide content is thin (only 3 bullet lines + generic text) | **Every slide must include specific names, numbers, years, or amounts.** Abstract placeholders like "Point 1" or "Initiative A" are strictly forbidden. Include at least 4 information elements (numbers, facts, analysis, specific examples) in the content area. Research the topic thoroughly before creating content |
+| Message line is just a statement of fact | **Always write the "So What" in declarative style.** Not "We did X" but "X establishes competitive advantage" -- always express implications, conclusions, or assertions |
+| Hint text like "Presenter 14pt" remains on cover | **Iterate all cover placeholders with `for ph in slide.placeholders:` and clear unused ones with `ph.text_frame.clear(); p.text = ""`.** Some templates have placeholders beyond idx=0 and idx=1. Check with markitdown for residuals |
+| Bottom half of content area is empty | **Maintain 70%+ content fill rate.** If Pattern A has 6 or fewer bullet lines, switch to Pattern E/K or add shapes. Adjust card panel heights to match content. Review thumbnails and fix any slide with conspicuous whitespace |
+| Text concentrated at top of cards/panels with empty bottom half | Shrink card height to match content amount, or add content to fill it. Card height should be dynamically determined based on content, not a fixed value |
+| Pattern V `total_h` unspecified, leaving excessive whitespace below cards | Always specify the `total_h` parameter for `add_numbered_card_grid()`. The default `AH=5.35"` stretches cards vertically. For 5-column 1-row, aim for `total_h=3.20`; for 2 rows, aim for `total_h=4.50`. Verify with thumbnail |
+| Cover idx=12 (Presenter) or idx=2 (Date) not cleared | **Cover placeholder structure varies by theme.** Iterate all placeholders with `for ph in slide.placeholders:` and set unused ones to `p.text = " "` (single space). Empty string `""` may still show layout-side hint text |
+| Two Column (Pattern B) with only text, bottom half empty | **Pattern B must use OFF_WHITE panel background + CORE_PURPLE accent bar.** Text-only two columns is not Pattern B. Panels fill the entire content area (y=2.35 to near BY), naturally eliminating whitespace. If text is sparse, increase line spacing (`p.space_after = Pt(8)`) or vertically center text within panels |
+| Content concentrated at top with empty bottom (all patterns) | **Remedies for sparse text (in priority order):** (1) Add content to fill the space (2) Increase line/paragraph spacing (`p.space_after = Pt(8)`, etc.) (3) Vertically center content (4) Change the pattern. Never leave the bottom half empty |
+| Not setting space_after on bullet lists | **Set `p.space_after = Pt(8)` on all bullet lists and multi-line text.** Default line spacing packs text at the top, leaving large whitespace at the bottom. Also applies when using the `_bullets()` helper. Wider spacing naturally distributes content vertically for a professional appearance |
+| Text biased to top within boxes (all patterns) | **Set vertical center alignment (`anchor=ctr`) as mandatory for all textbox/card/panel text.** Apply `tf._txBody.find(_qn("a:bodyPr")).set("anchor", "ctr")` to all textboxes. This ensures text is vertically centered even when sparse, fundamentally fixing the top-bias issue |
+| Numbers wrap vertically in table item-number columns ("2.\n1" or "1\n0") | **Ensure the column width accommodates the longest number text on a single line.** Guidelines: single digit -> min 0.45", double digit -> min 0.55", "X.X" format -> min 0.65", "QXX" format -> min 0.65". Also set `word_wrap = False` on cells or ensure sufficient width. Insufficient width causes "10" to wrap as "1\n0" or "2.1" as "2.\n1", destroying the table. **Always verify slides with double-digit numbers via thumbnail** |
+| Table col_widths sum is less than CW, causing left alignment | **When specifying col_widths, ensure the total of all column widths equals CW (12.50").** If the sum is less than CW, the table aligns left with large whitespace on the right. Example: 4 columns = `0.50 + 2.20 + 8.00 + 1.80 = 12.50`. Verify `sum(col_widths) == CW` before generation |
+| Header and content overlap within panels (Pattern B / K etc.) | **When placing header and body textboxes within a panel, ensure y coordinates don't overlap.** Maintain at least 0.10" gap between the header bottom (y + h) and body top (y). If header text is long and wraps, increase header h or shorten the text. Estimated header lines = ceil(char_count x 0.14 / textbox_width). If 2+ lines, set h to 0.50" or more |
+| Pattern H (Circular Flow) center circle overlaps with boxes | **When adding a center circle, set RADIUS >= `BOX_W/2 + center_W/2 + 0.15`.** Example: BOX_W=2.00, center_W=1.70 -> minimum RADIUS=2.00". RADIUS=1.50 causes 0.35" overlap on each side between left/right boxes and the center circle. Without center circle, RADIUS=1.50-1.80 is fine |
+| Layout collapses after retheme (decorative layouts like Gray slice heading) | **retheme.py content layout detection uses a staged fallback.** TITLE+BODY+footer -> TITLE only ("Title Only" equivalent) -> TITLE+BODY. Templates without BODY/footer placeholders (e.g., BCG) select "Title Only". If layout collapses, check the fallback priority in retheme-guide.md |
+| PowerPoint COM cannot open file after retheme (`ERROR_FILE_CORRUPT`) | **Caused by duplicate media entries in the ZIP.** If `zipfile` warning `Duplicate name: 'ppt/media/imageXX.png'` appears, run the repair script in retheme-guide.md under "ZIP duplicate media entry repair". Always verify the file opens with `thumbnail.py` after retheme |
+| New theme template PPTX contains content slides | **The theme JSON `template` field must point to a clean master without content slides.** When importing external presentations as themes, delete all slides and save as `assets/masters/<name>-clean.pptx`. See "Template preparation" in retheme-guide.md |
+| Skipping AskUserQuestion and auto-selecting a theme | **Strictly forbidden.** Even if there is only one theme, **call the AskUserQuestion tool** (the actual tool, not plain text). Theme selection determines the entire slide appearance, so proceeding without user confirmation is not allowed. Outline confirmation is also required -- both Step 0b and Step 1 need explicit **AskUserQuestion tool calls** |
+| Skipping outline confirmation and jumping straight to script writing | **Strictly forbidden.** Step 0 must follow: generate_outline -> format_outline_md -> present to user -> obtain approval. Without an outline, structure, pattern selection, and storyline quality cannot be ensured |

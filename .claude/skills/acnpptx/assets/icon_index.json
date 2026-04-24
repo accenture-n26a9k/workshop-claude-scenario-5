@@ -1,0 +1,3062 @@
+{
+  "customer care": {
+    "slide": 1,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "csr": {
+    "slide": 1,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "headphone": {
+    "slide": 1,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "headset": {
+    "slide": 1,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "support": {
+    "slide": 1,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "customer service": {
+    "slide": 1,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "amplify": {
+    "slide": 1,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "volume": {
+    "slide": 1,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "audio": {
+    "slide": 1,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "video": {
+    "slide": 1,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "mute": {
+    "slide": 1,
+    "shape": "Graphic 15",
+    "png": null
+  },
+  "silence": {
+    "slide": 1,
+    "shape": "Graphic 15",
+    "png": null
+  },
+  "microphone": {
+    "slide": 1,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "broadcast": {
+    "slide": 1,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "podcast": {
+    "slide": 1,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "pause": {
+    "slide": 1,
+    "shape": "Graphic 115",
+    "png": null
+  },
+  "music": {
+    "slide": 1,
+    "shape": "Graphic 121",
+    "png": null
+  },
+  "notes": {
+    "slide": 1,
+    "shape": "Graphic 121",
+    "png": null
+  },
+  "call": {
+    "slide": 1,
+    "shape": "Freeform 141",
+    "png": null
+  },
+  "video conference": {
+    "slide": 1,
+    "shape": "Freeform 141",
+    "png": null
+  },
+  "meeting": {
+    "slide": 1,
+    "shape": "Freeform 141",
+    "png": null
+  },
+  "teams": {
+    "slide": 1,
+    "shape": "Freeform 141",
+    "png": null
+  },
+  "alarm": {
+    "slide": 1,
+    "shape": "Group 180",
+    "png": null
+  },
+  "bell": {
+    "slide": 1,
+    "shape": "Group 180",
+    "png": null
+  },
+  "alert": {
+    "slide": 1,
+    "shape": "Group 180",
+    "png": null
+  },
+  "notification": {
+    "slide": 1,
+    "shape": "Group 180",
+    "png": null
+  },
+  "sound": {
+    "slide": 1,
+    "shape": "Group 180",
+    "png": null
+  },
+  "ring": {
+    "slide": 1,
+    "shape": "Group 180",
+    "png": null
+  },
+  "camera": {
+    "slide": 1,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "privacy": {
+    "slide": 1,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "security": {
+    "slide": 1,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "surveillance": {
+    "slide": 1,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "auction": {
+    "slide": 2,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "governance": {
+    "slide": 2,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "law": {
+    "slide": 2,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "legal": {
+    "slide": 2,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "justice": {
+    "slide": 2,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "govern": {
+    "slide": 2,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "bank": {
+    "slide": 2,
+    "shape": "Graphic 16",
+    "png": null
+  },
+  "financial services": {
+    "slide": 2,
+    "shape": "Graphic 16",
+    "png": null
+  },
+  "banking": {
+    "slide": 2,
+    "shape": "Graphic 16",
+    "png": null
+  },
+  "credit": {
+    "slide": 2,
+    "shape": "Graphic 303",
+    "png": null
+  },
+  "denied": {
+    "slide": 2,
+    "shape": "Graphic 303",
+    "png": null
+  },
+  "check": {
+    "slide": 2,
+    "shape": "Graphic 128",
+    "png": null
+  },
+  "confirm": {
+    "slide": 2,
+    "shape": "Graphic 128",
+    "png": null
+  },
+  "bar": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "graph": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "chart": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "performance": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "decrease": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "shrink": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "loss": {
+    "slide": 2,
+    "shape": "Graphic 225",
+    "png": null
+  },
+  "increase": {
+    "slide": 2,
+    "shape": "Graphic 231",
+    "png": null
+  },
+  "gain": {
+    "slide": 2,
+    "shape": "Graphic 231",
+    "png": null
+  },
+  "grow": {
+    "slide": 2,
+    "shape": "Graphic 231",
+    "png": null
+  },
+  "growth": {
+    "slide": 2,
+    "shape": "Graphic 231",
+    "png": null
+  },
+  "profit": {
+    "slide": 2,
+    "shape": "Graphic 237",
+    "png": null
+  },
+  "pie": {
+    "slide": 2,
+    "shape": "Graphic 294",
+    "png": null
+  },
+  "segment": {
+    "slide": 2,
+    "shape": "Graphic 294",
+    "png": null
+  },
+  "value": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "diamond": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "care": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "attain": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "reach": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "achieve": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "quality": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "vip": {
+    "slide": 2,
+    "shape": "Graphic 291",
+    "png": null
+  },
+  "partner": {
+    "slide": 2,
+    "shape": "Graphic 272",
+    "png": null
+  },
+  "partners": {
+    "slide": 2,
+    "shape": "Graphic 272",
+    "png": null
+  },
+  "deal": {
+    "slide": 2,
+    "shape": "Graphic 272",
+    "png": null
+  },
+  "handshake": {
+    "slide": 2,
+    "shape": "Graphic 272",
+    "png": null
+  },
+  "scales": {
+    "slide": 2,
+    "shape": "Graphic 278",
+    "png": null
+  },
+  "equal": {
+    "slide": 2,
+    "shape": "Graphic 278",
+    "png": null
+  },
+  "balanced": {
+    "slide": 2,
+    "shape": "Graphic 278",
+    "png": null
+  },
+  "balance": {
+    "slide": 2,
+    "shape": "Graphic 278",
+    "png": null
+  },
+  "plan": {
+    "slide": 2,
+    "shape": "Graphic 309",
+    "png": null
+  },
+  "planning": {
+    "slide": 2,
+    "shape": "Graphic 309",
+    "png": null
+  },
+  "strategy": {
+    "slide": 2,
+    "shape": "Graphic 309",
+    "png": null
+  },
+  "coach": {
+    "slide": 2,
+    "shape": "Graphic 309",
+    "png": null
+  },
+  "play": {
+    "slide": 2,
+    "shape": "Graphic 309",
+    "png": null
+  },
+  "game plan": {
+    "slide": 2,
+    "shape": "Graphic 309",
+    "png": null
+  },
+  "sales": {
+    "slide": 2,
+    "shape": "Graphic 327",
+    "png": null
+  },
+  "roi": {
+    "slide": 2,
+    "shape": "Graphic 327",
+    "png": null
+  },
+  "pound": {
+    "slide": 2,
+    "shape": "Graphic 346",
+    "png": null
+  },
+  "sterling": {
+    "slide": 2,
+    "shape": "Graphic 346",
+    "png": null
+  },
+  "coin": {
+    "slide": 2,
+    "shape": "Graphic 353",
+    "png": null
+  },
+  "money": {
+    "slide": 2,
+    "shape": "Graphic 353",
+    "png": null
+  },
+  "box": {
+    "slide": 3,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "product": {
+    "slide": 3,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "logistics": {
+    "slide": 3,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "handle": {
+    "slide": 3,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "deliver": {
+    "slide": 3,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "trolley": {
+    "slide": 3,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "dolly": {
+    "slide": 3,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "ship": {
+    "slide": 3,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "products": {
+    "slide": 3,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "truck": {
+    "slide": 3,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "delivery": {
+    "slide": 3,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "shipping": {
+    "slide": 3,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "fast": {
+    "slide": 3,
+    "shape": "Group 128",
+    "png": null
+  },
+  "store": {
+    "slide": 3,
+    "shape": "Graphic 139",
+    "png": null
+  },
+  "retail": {
+    "slide": 3,
+    "shape": "Graphic 139",
+    "png": null
+  },
+  "shopping bag": {
+    "slide": 3,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "heart": {
+    "slide": 3,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "loyalty": {
+    "slide": 3,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "experience": {
+    "slide": 3,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "commerce": {
+    "slide": 3,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "shop": {
+    "slide": 3,
+    "shape": "Graphic 158",
+    "png": null
+  },
+  "basket": {
+    "slide": 3,
+    "shape": "Graphic 158",
+    "png": null
+  },
+  "checkout": {
+    "slide": 3,
+    "shape": "Graphic 158",
+    "png": null
+  },
+  "content": {
+    "slide": 3,
+    "shape": "Graphic 164",
+    "png": null
+  },
+  "file": {
+    "slide": 3,
+    "shape": "Graphic 164",
+    "png": null
+  },
+  "document": {
+    "slide": 3,
+    "shape": "Graphic 164",
+    "png": null
+  },
+  "warning": {
+    "slide": 3,
+    "shape": "Graphic 170",
+    "png": null
+  },
+  "risk": {
+    "slide": 3,
+    "shape": "Graphic 170",
+    "png": null
+  },
+  "excel": {
+    "slide": 3,
+    "shape": "Graphic 176",
+    "png": null
+  },
+  "spreadsheet": {
+    "slide": 3,
+    "shape": "Graphic 176",
+    "png": null
+  },
+  "table": {
+    "slide": 3,
+    "shape": "Graphic 176",
+    "png": null
+  },
+  "xls": {
+    "slide": 3,
+    "shape": "Graphic 176",
+    "png": null
+  },
+  "scissors": {
+    "slide": 4,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "cut": {
+    "slide": 4,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "clip": {
+    "slide": 4,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "pencil": {
+    "slide": 4,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "office": {
+    "slide": 4,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "write": {
+    "slide": 4,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "compose": {
+    "slide": 4,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "school": {
+    "slide": 4,
+    "shape": "Graphic 10",
+    "png": null
+  },
+  "edit": {
+    "slide": 4,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "pin": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "push pin": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "tack": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "retain": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "prick": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "poke": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "sharp": {
+    "slide": 4,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "print": {
+    "slide": 4,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "printer": {
+    "slide": 4,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "picture": {
+    "slide": 4,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "photo": {
+    "slide": 4,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "design": {
+    "slide": 4,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "work shop": {
+    "slide": 4,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "workshop": {
+    "slide": 4,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "paper clip": {
+    "slide": 4,
+    "shape": "Graphic 134",
+    "png": null
+  },
+  "paper": {
+    "slide": 4,
+    "shape": "Graphic 134",
+    "png": null
+  },
+  "trash": {
+    "slide": 4,
+    "shape": "Graphic 140",
+    "png": null
+  },
+  "garbage": {
+    "slide": 4,
+    "shape": "Graphic 140",
+    "png": null
+  },
+  "bin": {
+    "slide": 4,
+    "shape": "Graphic 140",
+    "png": null
+  },
+  "can": {
+    "slide": 4,
+    "shape": "Graphic 140",
+    "png": null
+  },
+  "toss": {
+    "slide": 4,
+    "shape": "Graphic 140",
+    "png": null
+  },
+  "delete": {
+    "slide": 4,
+    "shape": "Graphic 140",
+    "png": null
+  },
+  "tool": {
+    "slide": 4,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "tools": {
+    "slide": 4,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "wrench": {
+    "slide": 4,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "screwdriver": {
+    "slide": 4,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "idea": {
+    "slide": 4,
+    "shape": "Graphic 160",
+    "png": null
+  },
+  "lightbulb": {
+    "slide": 4,
+    "shape": "Graphic 160",
+    "png": null
+  },
+  "light": {
+    "slide": 4,
+    "shape": "Graphic 160",
+    "png": null
+  },
+  "creative": {
+    "slide": 4,
+    "shape": "Graphic 160",
+    "png": null
+  },
+  "book": {
+    "slide": 4,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "read": {
+    "slide": 4,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "magazine": {
+    "slide": 4,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "catalog": {
+    "slide": 4,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "news": {
+    "slide": 4,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "relate": {
+    "slide": 4,
+    "shape": "Graphic 177",
+    "png": null
+  },
+  "context": {
+    "slide": 4,
+    "shape": "Graphic 177",
+    "png": null
+  },
+  "relevant": {
+    "slide": 4,
+    "shape": "Graphic 177",
+    "png": null
+  },
+  "footprint": {
+    "slide": 4,
+    "shape": "Graphic 177",
+    "png": null
+  },
+  "cube": {
+    "slide": 4,
+    "shape": "Graphic 183",
+    "png": null
+  },
+  "view": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "vision": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "eye": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "eyeball": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "see": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "visibility": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "watch": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "ad": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "advertising": {
+    "slide": 4,
+    "shape": "Graphic 195",
+    "png": null
+  },
+  "hide": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "hidden": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "viewable": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "block": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "blind": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "no visibility": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "obscured": {
+    "slide": 4,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "search": {
+    "slide": 4,
+    "shape": "Graphic 211",
+    "png": null
+  },
+  "seo": {
+    "slide": 4,
+    "shape": "Graphic 211",
+    "png": null
+  },
+  "sem": {
+    "slide": 4,
+    "shape": "Graphic 211",
+    "png": null
+  },
+  "zoom": {
+    "slide": 4,
+    "shape": "Graphic 217",
+    "png": null
+  },
+  "zoom in": {
+    "slide": 4,
+    "shape": "Graphic 217",
+    "png": null
+  },
+  "zoom out": {
+    "slide": 4,
+    "shape": "Graphic 223",
+    "png": null
+  },
+  "megaphone": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "bullhorn": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "promote": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "media": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "blast": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "announce": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "announcement": {
+    "slide": 4,
+    "shape": "Graphic 229",
+    "png": null
+  },
+  "plug": {
+    "slide": 4,
+    "shape": "Graphic 235",
+    "png": null
+  },
+  "power": {
+    "slide": 4,
+    "shape": "Graphic 235",
+    "png": null
+  },
+  "electricity": {
+    "slide": 4,
+    "shape": "Graphic 235",
+    "png": null
+  },
+  "contract": {
+    "slide": 5,
+    "shape": "Group 25",
+    "png": null
+  },
+  "month": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "date": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "calendar": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "event": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "deadline": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "on time": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "schedule": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "diary": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "expire": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "expiration": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "week": {
+    "slide": 5,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "time": {
+    "slide": 5,
+    "shape": "Graphic 94",
+    "png": null
+  },
+  "clock": {
+    "slide": 5,
+    "shape": "Graphic 94",
+    "png": null
+  },
+  "hourglass": {
+    "slide": 5,
+    "shape": "Graphic 100",
+    "png": null
+  },
+  "slow": {
+    "slide": 5,
+    "shape": "Graphic 100",
+    "png": null
+  },
+  "key": {
+    "slide": 5,
+    "shape": "Graphic 106",
+    "png": null
+  },
+  "open": {
+    "slide": 5,
+    "shape": "Graphic 106",
+    "png": null
+  },
+  "keyhole": {
+    "slide": 5,
+    "shape": "Graphic 113",
+    "png": null
+  },
+  "locked": {
+    "slide": 5,
+    "shape": "Graphic 113",
+    "png": null
+  },
+  "peek": {
+    "slide": 5,
+    "shape": "Graphic 113",
+    "png": null
+  },
+  "spy": {
+    "slide": 5,
+    "shape": "Graphic 113",
+    "png": null
+  },
+  "peep": {
+    "slide": 5,
+    "shape": "Graphic 113",
+    "png": null
+  },
+  "peeping": {
+    "slide": 5,
+    "shape": "Graphic 113",
+    "png": null
+  },
+  "no time": {
+    "slide": 5,
+    "shape": "Graphic 119",
+    "png": null
+  },
+  "stopwatch": {
+    "slide": 5,
+    "shape": "Graphic 119",
+    "png": null
+  },
+  "genius": {
+    "slide": 5,
+    "shape": "Graphic 125",
+    "png": null
+  },
+  "expert": {
+    "slide": 5,
+    "shape": "Graphic 125",
+    "png": null
+  },
+  "advanced": {
+    "slide": 5,
+    "shape": "Graphic 125",
+    "png": null
+  },
+  "link": {
+    "slide": 5,
+    "shape": "Graphic 131",
+    "png": null
+  },
+  "hyperlink": {
+    "slide": 5,
+    "shape": "Graphic 131",
+    "png": null
+  },
+  "linked": {
+    "slide": 5,
+    "shape": "Graphic 131",
+    "png": null
+  },
+  "connected": {
+    "slide": 5,
+    "shape": "Graphic 131",
+    "png": null
+  },
+  "chain": {
+    "slide": 5,
+    "shape": "Graphic 131",
+    "png": null
+  },
+  "strawberry": {
+    "slide": 5,
+    "shape": "Graphic 137",
+    "png": null
+  },
+  "fruit": {
+    "slide": 5,
+    "shape": "Graphic 137",
+    "png": null
+  },
+  "produce": {
+    "slide": 5,
+    "shape": "Graphic 137",
+    "png": null
+  },
+  "wheat": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "grain": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "grains": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "crops": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "farming": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "farm": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "agriculture": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "bakery": {
+    "slide": 5,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "drink": {
+    "slide": 5,
+    "shape": "Graphic 149",
+    "png": null
+  },
+  "bottle": {
+    "slide": 5,
+    "shape": "Graphic 149",
+    "png": null
+  },
+  "cup": {
+    "slide": 5,
+    "shape": "Graphic 155",
+    "png": null
+  },
+  "coffee": {
+    "slide": 5,
+    "shape": "Graphic 155",
+    "png": null
+  },
+  "tea": {
+    "slide": 5,
+    "shape": "Graphic 155",
+    "png": null
+  },
+  "computer": {
+    "slide": 6,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "desktop": {
+    "slide": 6,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "dashboard": {
+    "slide": 6,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "code": {
+    "slide": 6,
+    "shape": "Graphic 29",
+    "png": null
+  },
+  "op model": {
+    "slide": 6,
+    "shape": "Graphic 35",
+    "png": null
+  },
+  "flow": {
+    "slide": 6,
+    "shape": "Graphic 35",
+    "png": null
+  },
+  "workflow": {
+    "slide": 6,
+    "shape": "Graphic 35",
+    "png": null
+  },
+  "assessment": {
+    "slide": 6,
+    "shape": "Graphic 35",
+    "png": null
+  },
+  "login": {
+    "slide": 6,
+    "shape": "Graphic 117",
+    "png": null
+  },
+  "secure": {
+    "slide": 6,
+    "shape": "Graphic 117",
+    "png": null
+  },
+  "lock": {
+    "slide": 6,
+    "shape": "Graphic 117",
+    "png": null
+  },
+  "mobile apps": {
+    "slide": 6,
+    "shape": "Graphic 123",
+    "png": null
+  },
+  "applications": {
+    "slide": 6,
+    "shape": "Graphic 123",
+    "png": null
+  },
+  "virtual": {
+    "slide": 6,
+    "shape": "Group 152",
+    "png": null
+  },
+  "human": {
+    "slide": 6,
+    "shape": "Group 152",
+    "png": null
+  },
+  "connection": {
+    "slide": 6,
+    "shape": "Group 152",
+    "png": null
+  },
+  "ai": {
+    "slide": 6,
+    "shape": "Group 152",
+    "png": null
+  },
+  "ai chip": {
+    "slide": 6,
+    "shape": "Group 193",
+    "png": null
+  },
+  "ai controlled": {
+    "slide": 6,
+    "shape": "Group 193",
+    "png": null
+  },
+  "chip": {
+    "slide": 6,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "microchip": {
+    "slide": 6,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "tech": {
+    "slide": 6,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "eht": {
+    "slide": 6,
+    "shape": "Graphic 201",
+    "png": null
+  },
+  "robotics": {
+    "slide": 6,
+    "shape": "Graphic 207",
+    "png": null
+  },
+  "mechanical engineering": {
+    "slide": 6,
+    "shape": "Graphic 207",
+    "png": null
+  },
+  "supply chain": {
+    "slide": 6,
+    "shape": "Graphic 207",
+    "png": null
+  },
+  "mechatronics": {
+    "slide": 6,
+    "shape": "Graphic 207",
+    "png": null
+  },
+  "data": {
+    "slide": 6,
+    "shape": "Group 232",
+    "png": null
+  },
+  "science": {
+    "slide": 6,
+    "shape": "Group 232",
+    "png": null
+  },
+  "algorithm": {
+    "slide": 6,
+    "shape": "Group 232",
+    "png": null
+  },
+  "mining": {
+    "slide": 6,
+    "shape": "Graphic 239",
+    "png": null
+  },
+  "digital": {
+    "slide": 6,
+    "shape": "Graphic 239",
+    "png": null
+  },
+  "pick axe": {
+    "slide": 6,
+    "shape": "Graphic 245",
+    "png": null
+  },
+  "shovel": {
+    "slide": 6,
+    "shape": "Graphic 245",
+    "png": null
+  },
+  "signal": {
+    "slide": 7,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "wifi": {
+    "slide": 7,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "wi-fi": {
+    "slide": 7,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "energy": {
+    "slide": 7,
+    "shape": "Graphic 34",
+    "png": null
+  },
+  "full": {
+    "slide": 7,
+    "shape": "Graphic 34",
+    "png": null
+  },
+  "low": {
+    "slide": 7,
+    "shape": "Graphic 119",
+    "png": null
+  },
+  "phone": {
+    "slide": 7,
+    "shape": "Graphic 137",
+    "png": null
+  },
+  "notebook": {
+    "slide": 7,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "laptop": {
+    "slide": 7,
+    "shape": "Graphic 143",
+    "png": null
+  },
+  "mac": {
+    "slide": 7,
+    "shape": "Graphic 149",
+    "png": null
+  },
+  "web": {
+    "slide": 7,
+    "shape": "Graphic 155",
+    "png": null
+  },
+  "website": {
+    "slide": 7,
+    "shape": "Graphic 155",
+    "png": null
+  },
+  "responsive": {
+    "slide": 7,
+    "shape": "Graphic 155",
+    "png": null
+  },
+  "mobile": {
+    "slide": 7,
+    "shape": "Graphic 161",
+    "png": null
+  },
+  "device": {
+    "slide": 7,
+    "shape": "Graphic 161",
+    "png": null
+  },
+  "smartphone": {
+    "slide": 7,
+    "shape": "Graphic 161",
+    "png": null
+  },
+  "gear": {
+    "slide": 7,
+    "shape": "Graphic 167",
+    "png": null
+  },
+  "operations": {
+    "slide": 7,
+    "shape": "Graphic 167",
+    "png": null
+  },
+  "automate": {
+    "slide": 7,
+    "shape": "Graphic 167",
+    "png": null
+  },
+  "settings": {
+    "slide": 7,
+    "shape": "Graphic 167",
+    "png": null
+  },
+  "cog": {
+    "slide": 7,
+    "shape": "Graphic 167",
+    "png": null
+  },
+  "multi direction arrow": {
+    "slide": 7,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "choice": {
+    "slide": 7,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "cloud": {
+    "slide": 7,
+    "shape": "Graphic 191",
+    "png": null
+  },
+  "download": {
+    "slide": 7,
+    "shape": "Graphic 191",
+    "png": null
+  },
+  "upload": {
+    "slide": 7,
+    "shape": "Graphic 197",
+    "png": null
+  },
+  "down": {
+    "slide": 7,
+    "shape": "Graphic 203",
+    "png": null
+  },
+  "love": {
+    "slide": 8,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "delight": {
+    "slide": 8,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "inspire": {
+    "slide": 8,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "give": {
+    "slide": 8,
+    "shape": "Group 99",
+    "png": null
+  },
+  "donation": {
+    "slide": 8,
+    "shape": "Group 99",
+    "png": null
+  },
+  "solidarity": {
+    "slide": 8,
+    "shape": "Group 99",
+    "png": null
+  },
+  "nurture": {
+    "slide": 8,
+    "shape": "Graphic 108",
+    "png": null
+  },
+  "king": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "queen": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "best": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "customer": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "royal": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "royalty": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "castle": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "crown": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "top": {
+    "slide": 8,
+    "shape": "Graphic 116",
+    "png": null
+  },
+  "flag": {
+    "slide": 8,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "issue": {
+    "slide": 8,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "raise": {
+    "slide": 8,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "banner": {
+    "slide": 8,
+    "shape": "Graphic 122",
+    "png": null
+  },
+  "star": {
+    "slide": 8,
+    "shape": "Graphic 129",
+    "png": null
+  },
+  "performer": {
+    "slide": 8,
+    "shape": "Graphic 129",
+    "png": null
+  },
+  "favorite": {
+    "slide": 8,
+    "shape": "Graphic 129",
+    "png": null
+  },
+  "gift": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "present": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "simple": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "easy": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "rewards": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "offer": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "offers": {
+    "slide": 8,
+    "shape": "Graphic 135",
+    "png": null
+  },
+  "thumb": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "thumbs": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "unlike": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "dislike": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "bad": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "negative": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "feedback": {
+    "slide": 8,
+    "shape": "Graphic 141",
+    "png": null
+  },
+  "up thumbs": {
+    "slide": 8,
+    "shape": "Graphic 147",
+    "png": null
+  },
+  "like": {
+    "slide": 8,
+    "shape": "Graphic 147",
+    "png": null
+  },
+  "good": {
+    "slide": 8,
+    "shape": "Graphic 147",
+    "png": null
+  },
+  "positive": {
+    "slide": 8,
+    "shape": "Graphic 147",
+    "png": null
+  },
+  "happy": {
+    "slide": 8,
+    "shape": "Graphic 153",
+    "png": null
+  },
+  "satisfied": {
+    "slide": 8,
+    "shape": "Graphic 153",
+    "png": null
+  },
+  "face": {
+    "slide": 8,
+    "shape": "Graphic 159",
+    "png": null
+  },
+  "neutral": {
+    "slide": 8,
+    "shape": "Graphic 159",
+    "png": null
+  },
+  "uncaring": {
+    "slide": 8,
+    "shape": "Graphic 159",
+    "png": null
+  },
+  "angry": {
+    "slide": 8,
+    "shape": "object 68",
+    "png": null
+  },
+  "sad": {
+    "slide": 8,
+    "shape": "object 68",
+    "png": null
+  },
+  "disappointed": {
+    "slide": 8,
+    "shape": "object 68",
+    "png": null
+  },
+  "unhappy": {
+    "slide": 8,
+    "shape": "object 68",
+    "png": null
+  },
+  "dissatisfied": {
+    "slide": 8,
+    "shape": "object 68",
+    "png": null
+  },
+  "frown": {
+    "slide": 8,
+    "shape": "object 68",
+    "png": null
+  },
+  "pass": {
+    "slide": 8,
+    "shape": "Graphic 173",
+    "png": null
+  },
+  "ok": {
+    "slide": 8,
+    "shape": "Graphic 173",
+    "png": null
+  },
+  "win": {
+    "slide": 8,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "1st": {
+    "slide": 8,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "winner": {
+    "slide": 8,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "medal": {
+    "slide": 8,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "award": {
+    "slide": 8,
+    "shape": "Graphic 179",
+    "png": null
+  },
+  "trophy": {
+    "slide": 8,
+    "shape": "Graphic 185",
+    "png": null
+  },
+  "achievement": {
+    "slide": 8,
+    "shape": "Graphic 185",
+    "png": null
+  },
+  "recognized": {
+    "slide": 8,
+    "shape": "Graphic 185",
+    "png": null
+  },
+  "leader": {
+    "slide": 8,
+    "shape": "Graphic 185",
+    "png": null
+  },
+  "premium": {
+    "slide": 8,
+    "shape": "Graphic 193",
+    "png": null
+  },
+  "perfect": {
+    "slide": 8,
+    "shape": "Graphic 193",
+    "png": null
+  },
+  "perfection": {
+    "slide": 8,
+    "shape": "Graphic 193",
+    "png": null
+  },
+  "ambulance": {
+    "slide": 9,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "emergency": {
+    "slide": 9,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "blood": {
+    "slide": 9,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "drop": {
+    "slide": 9,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "droplet": {
+    "slide": 9,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "heartbeat": {
+    "slide": 9,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "life": {
+    "slide": 9,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "alive": {
+    "slide": 9,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "medical": {
+    "slide": 9,
+    "shape": "Graphic 33",
+    "png": null
+  },
+  "kit": {
+    "slide": 9,
+    "shape": "Graphic 33",
+    "png": null
+  },
+  "pill": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "medicine": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "pharma": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "rx": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "meds": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "pharmaceutical": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "prescription": {
+    "slide": 9,
+    "shape": "Graphic 109",
+    "png": null
+  },
+  "genome": {
+    "slide": 9,
+    "shape": "Graphic 121",
+    "png": null
+  },
+  "dna": {
+    "slide": 9,
+    "shape": "Graphic 121",
+    "png": null
+  },
+  "chemistry": {
+    "slide": 9,
+    "shape": "Group 135",
+    "png": null
+  },
+  "physical": {
+    "slide": 9,
+    "shape": "Group 135",
+    "png": null
+  },
+  "composition": {
+    "slide": 9,
+    "shape": "Group 135",
+    "png": null
+  },
+  "lab experiments": {
+    "slide": 9,
+    "shape": "Graphic 142",
+    "png": null
+  },
+  "wave": {
+    "slide": 9,
+    "shape": "object 88",
+    "png": null
+  },
+  "blip": {
+    "slide": 9,
+    "shape": "object 88",
+    "png": null
+  },
+  "beat": {
+    "slide": 9,
+    "shape": "object 88",
+    "png": null
+  },
+  "doctor": {
+    "slide": 9,
+    "shape": "Graphic 148",
+    "png": null
+  },
+  "certificate": {
+    "slide": 9,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "regulation": {
+    "slide": 9,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "regulatory": {
+    "slide": 9,
+    "shape": "Graphic 154",
+    "png": null
+  },
+  "user": {
+    "slide": 10,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "account": {
+    "slide": 10,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "crm": {
+    "slide": 10,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "360": {
+    "slide": 10,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "consumer": {
+    "slide": 10,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "person": {
+    "slide": 10,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "group": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "users": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "team": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "people": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "customers": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "consumers": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "resources": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "staff": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "staffing": {
+    "slide": 10,
+    "shape": "Graphic 26",
+    "png": null
+  },
+  "avatar": {
+    "slide": 10,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "plus": {
+    "slide": 10,
+    "shape": "Graphic 150",
+    "png": null
+  },
+  "safety": {
+    "slide": 10,
+    "shape": "Graphic 184",
+    "png": null
+  },
+  "network": {
+    "slide": 10,
+    "shape": "Graphic 192",
+    "png": null
+  },
+  "collaboration": {
+    "slide": 10,
+    "shape": "Graphic 198",
+    "png": null
+  },
+  "discussion": {
+    "slide": 10,
+    "shape": "Graphic 198",
+    "png": null
+  },
+  "organization": {
+    "slide": 10,
+    "shape": "Graphic 204",
+    "png": null
+  },
+  "global": {
+    "slide": 10,
+    "shape": "Graphic 204",
+    "png": null
+  },
+  "boss": {
+    "slide": 10,
+    "shape": "Graphic 210",
+    "png": null
+  },
+  "structure": {
+    "slide": 10,
+    "shape": "Graphic 210",
+    "png": null
+  },
+  "hearing impaired": {
+    "slide": 10,
+    "shape": "Group 240",
+    "png": null
+  },
+  "diversity": {
+    "slide": 10,
+    "shape": "Group 284",
+    "png": null
+  },
+  "inclusivity": {
+    "slide": 10,
+    "shape": "Group 284",
+    "png": null
+  },
+  "representation": {
+    "slide": 10,
+    "shape": "Group 284",
+    "png": null
+  },
+  "braille": {
+    "slide": 10,
+    "shape": "Group 323",
+    "png": null
+  },
+  "accessible": {
+    "slide": 10,
+    "shape": "Graphic 338",
+    "png": null
+  },
+  "accessibility": {
+    "slide": 10,
+    "shape": "Graphic 338",
+    "png": null
+  },
+  "wheelchair": {
+    "slide": 10,
+    "shape": "Graphic 338",
+    "png": null
+  },
+  "management": {
+    "slide": 11,
+    "shape": "Graphic 11",
+    "png": null
+  },
+  "wcm": {
+    "slide": 11,
+    "shape": "Graphic 11",
+    "png": null
+  },
+  "plot": {
+    "slide": 11,
+    "shape": "Graphic 18",
+    "png": null
+  },
+  "journey": {
+    "slide": 11,
+    "shape": "Graphic 18",
+    "png": null
+  },
+  "course": {
+    "slide": 11,
+    "shape": "Graphic 18",
+    "png": null
+  },
+  "hierarchy": {
+    "slide": 11,
+    "shape": "Graphic 52",
+    "png": null
+  },
+  "org": {
+    "slide": 11,
+    "shape": "Graphic 52",
+    "png": null
+  },
+  "pyramid": {
+    "slide": 11,
+    "shape": "Graphic 52",
+    "png": null
+  },
+  "iot": {
+    "slide": 11,
+    "shape": "Graphic 58",
+    "png": null
+  },
+  "process": {
+    "slide": 11,
+    "shape": "Graphic 64",
+    "png": null
+  },
+  "multi stage": {
+    "slide": 11,
+    "shape": "Graphic 64",
+    "png": null
+  },
+  "phase": {
+    "slide": 11,
+    "shape": "Graphic 64",
+    "png": null
+  },
+  "phases": {
+    "slide": 11,
+    "shape": "Graphic 64",
+    "png": null
+  },
+  "share": {
+    "slide": 11,
+    "shape": "Graphic 70",
+    "png": null
+  },
+  "joined": {
+    "slide": 11,
+    "shape": "Graphic 70",
+    "png": null
+  },
+  "marketing": {
+    "slide": 11,
+    "shape": "Graphic 78",
+    "png": null
+  },
+  "target": {
+    "slide": 11,
+    "shape": "Graphic 78",
+    "png": null
+  },
+  "campaign": {
+    "slide": 11,
+    "shape": "Graphic 78",
+    "png": null
+  },
+  "factory": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "eco": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "green": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "renewable": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "sustainable": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "sustainability": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "leaf": {
+    "slide": 12,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "globe": {
+    "slide": 12,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "earth": {
+    "slide": 12,
+    "shape": "Graphic 9",
+    "png": null
+  },
+  "nature": {
+    "slide": 12,
+    "shape": "Graphic 21",
+    "png": null
+  },
+  "thermometer": {
+    "slide": 12,
+    "shape": "Graphic 169",
+    "png": null
+  },
+  "temperature": {
+    "slide": 12,
+    "shape": "Graphic 169",
+    "png": null
+  },
+  "cold": {
+    "slide": 12,
+    "shape": "Graphic 169",
+    "png": null
+  },
+  "hot": {
+    "slide": 12,
+    "shape": "Graphic 175",
+    "png": null
+  },
+  "electric": {
+    "slide": 12,
+    "shape": "Graphic 181",
+    "png": null
+  },
+  "power plant": {
+    "slide": 12,
+    "shape": "Graphic 181",
+    "png": null
+  },
+  "power line": {
+    "slide": 12,
+    "shape": "Graphic 181",
+    "png": null
+  },
+  "industrial": {
+    "slide": 12,
+    "shape": "Graphic 181",
+    "png": null
+  },
+  "environment": {
+    "slide": 12,
+    "shape": "Graphic 187",
+    "png": null
+  },
+  "ecological": {
+    "slide": 12,
+    "shape": "Graphic 187",
+    "png": null
+  },
+  "car": {
+    "slide": 12,
+    "shape": "Group 201",
+    "png": null
+  },
+  "connected car": {
+    "slide": 12,
+    "shape": "Group 201",
+    "png": null
+  },
+  "vehicle": {
+    "slide": 12,
+    "shape": "Group 201",
+    "png": null
+  },
+  "wind": {
+    "slide": 12,
+    "shape": "Graphic 230",
+    "png": null
+  },
+  "turbine": {
+    "slide": 12,
+    "shape": "Graphic 230",
+    "png": null
+  },
+  "sun": {
+    "slide": 12,
+    "shape": "Graphic 236",
+    "png": null
+  },
+  "shine": {
+    "slide": 12,
+    "shape": "Graphic 236",
+    "png": null
+  },
+  "bright": {
+    "slide": 12,
+    "shape": "Graphic 236",
+    "png": null
+  },
+  "solar": {
+    "slide": 12,
+    "shape": "Graphic 236",
+    "png": null
+  },
+  "water": {
+    "slide": 12,
+    "shape": "Graphic 248",
+    "png": null
+  },
+  "faucet": {
+    "slide": 12,
+    "shape": "Graphic 248",
+    "png": null
+  },
+  "utility": {
+    "slide": 12,
+    "shape": "Graphic 248",
+    "png": null
+  },
+  "oil": {
+    "slide": 12,
+    "shape": "Graphic 278",
+    "png": null
+  },
+  "barrel": {
+    "slide": 12,
+    "shape": "Graphic 278",
+    "png": null
+  },
+  "sustaintability": {
+    "slide": 12,
+    "shape": "Group 294",
+    "png": null
+  },
+  "wash": {
+    "slide": 12,
+    "shape": "Group 294",
+    "png": null
+  },
+  "hands": {
+    "slide": 12,
+    "shape": "Group 294",
+    "png": null
+  },
+  "well": {
+    "slide": 12,
+    "shape": "Graphic 303",
+    "png": null
+  },
+  "derrick": {
+    "slide": 12,
+    "shape": "Graphic 303",
+    "png": null
+  },
+  "twitter": {
+    "slide": 13,
+    "shape": "Group 109",
+    "png": null
+  },
+  "chat": {
+    "slide": 13,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "message": {
+    "slide": 13,
+    "shape": "Graphic 17",
+    "png": null
+  },
+  "exclamation": {
+    "slide": 13,
+    "shape": "Graphic 32",
+    "png": null
+  },
+  "question": {
+    "slide": 13,
+    "shape": "Graphic 38",
+    "png": null
+  },
+  "ask": {
+    "slide": 13,
+    "shape": "Graphic 38",
+    "png": null
+  },
+  "typing": {
+    "slide": 13,
+    "shape": "Graphic 44",
+    "png": null
+  },
+  "text": {
+    "slide": 13,
+    "shape": "Graphic 50",
+    "png": null
+  },
+  "email": {
+    "slide": 13,
+    "shape": "Graphic 62",
+    "png": null
+  },
+  "mail": {
+    "slide": 13,
+    "shape": "Graphic 62",
+    "png": null
+  },
+  "envelope": {
+    "slide": 13,
+    "shape": "Graphic 62",
+    "png": null
+  },
+  "compass": {
+    "slide": 14,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "roadmap": {
+    "slide": 14,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "directional guide": {
+    "slide": 14,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "guided": {
+    "slide": 14,
+    "shape": "Graphic 3",
+    "png": null
+  },
+  "predictive": {
+    "slide": 14,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "predict": {
+    "slide": 14,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "touchpoint": {
+    "slide": 14,
+    "shape": "Graphic 22",
+    "png": null
+  },
+  "map": {
+    "slide": 14,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "speed": {
+    "slide": 14,
+    "shape": "Graphic 198",
+    "png": null
+  },
+  "gauge": {
+    "slide": 14,
+    "shape": "Graphic 198",
+    "png": null
+  },
+  "taxi": {
+    "slide": 14,
+    "shape": "Graphic 204",
+    "png": null
+  },
+  "auto": {
+    "slide": 14,
+    "shape": "Graphic 204",
+    "png": null
+  },
+  "cab": {
+    "slide": 14,
+    "shape": "Graphic 204",
+    "png": null
+  },
+  "train": {
+    "slide": 14,
+    "shape": "Graphic 210",
+    "png": null
+  },
+  "transportation": {
+    "slide": 14,
+    "shape": "Graphic 210",
+    "png": null
+  },
+  "travel": {
+    "slide": 14,
+    "shape": "Graphic 216",
+    "png": null
+  },
+  "plane": {
+    "slide": 14,
+    "shape": "Graphic 216",
+    "png": null
+  },
+  "air": {
+    "slide": 14,
+    "shape": "Graphic 216",
+    "png": null
+  },
+  "airplane": {
+    "slide": 14,
+    "shape": "Graphic 216",
+    "png": null
+  },
+  "boat": {
+    "slide": 14,
+    "shape": "object 74",
+    "png": null
+  },
+  "automotive": {
+    "slide": 14,
+    "shape": "Graphic 228",
+    "png": null
+  },
+  "bag": {
+    "slide": 14,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "luggage": {
+    "slide": 14,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "suitcase": {
+    "slide": 14,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "planet": {
+    "slide": 14,
+    "shape": "Graphic 240",
+    "png": null
+  },
+  "world": {
+    "slide": 14,
+    "shape": "Graphic 240",
+    "png": null
+  },
+  "locations": {
+    "slide": 14,
+    "shape": "Graphic 246",
+    "png": null
+  },
+  "markets": {
+    "slide": 14,
+    "shape": "Graphic 246",
+    "png": null
+  },
+  "window": {
+    "slide": 15,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "app": {
+    "slide": 15,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "application": {
+    "slide": 15,
+    "shape": "Graphic 4",
+    "png": null
+  },
+  "preferences": {
+    "slide": 15,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "personal": {
+    "slide": 15,
+    "shape": "Graphic 28",
+    "png": null
+  },
+  "analytics": {
+    "slide": 15,
+    "shape": "Graphic 34",
+    "png": null
+  },
+  "report": {
+    "slide": 15,
+    "shape": "Graphic 34",
+    "png": null
+  },
+  "server": {
+    "slide": 15,
+    "shape": "Graphic 151",
+    "png": null
+  },
+  "high tech": {
+    "slide": 15,
+    "shape": "Graphic 151",
+    "png": null
+  },
+  "storage": {
+    "slide": 15,
+    "shape": "Graphic 151",
+    "png": null
+  },
+  "reporting": {
+    "slide": 15,
+    "shape": "Graphic 151",
+    "png": null
+  },
+  "search engine": {
+    "slide": 15,
+    "shape": "Graphic 40",
+    "png": null
+  },
+  "database": {
+    "slide": 15,
+    "shape": "Graphic 139",
+    "png": null
+  },
+  "mart": {
+    "slide": 15,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "mdm": {
+    "slide": 15,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "import": {
+    "slide": 15,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "sync": {
+    "slide": 15,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "synch": {
+    "slide": 15,
+    "shape": "Graphic 145",
+    "png": null
+  },
+  "crosshair": {
+    "slide": 15,
+    "shape": "Graphic 157",
+    "png": null
+  },
+  "aim": {
+    "slide": 15,
+    "shape": "Graphic 157",
+    "png": null
+  },
+  "cursor": {
+    "slide": 15,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "point": {
+    "slide": 15,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "pointer": {
+    "slide": 15,
+    "shape": "Graphic 166",
+    "png": null
+  },
+  "touch": {
+    "slide": 15,
+    "shape": "Graphic 172",
+    "png": null
+  },
+  "tap": {
+    "slide": 15,
+    "shape": "Graphic 172",
+    "png": null
+  },
+  "stop": {
+    "slide": 15,
+    "shape": "Graphic 178",
+    "png": null
+  },
+  "halt": {
+    "slide": 15,
+    "shape": "Graphic 178",
+    "png": null
+  },
+  "hand": {
+    "slide": 15,
+    "shape": "Graphic 178",
+    "png": null
+  },
+  "synchronize": {
+    "slide": 15,
+    "shape": "Graphic 184",
+    "png": null
+  },
+  "cycle": {
+    "slide": 15,
+    "shape": "Graphic 184",
+    "png": null
+  },
+  "lifecycle": {
+    "slide": 15,
+    "shape": "Graphic 184",
+    "png": null
+  },
+  "e2e": {
+    "slide": 15,
+    "shape": "Graphic 184",
+    "png": null
+  },
+  "end to end": {
+    "slide": 15,
+    "shape": "Graphic 184",
+    "png": null
+  },
+  "continuous": {
+    "slide": 15,
+    "shape": "Graphic 190",
+    "png": null
+  },
+  "infinite": {
+    "slide": 15,
+    "shape": "Graphic 190",
+    "png": null
+  },
+  "infinity": {
+    "slide": 15,
+    "shape": "Graphic 190",
+    "png": null
+  },
+  "add": {
+    "slide": 15,
+    "shape": "Graphic 196",
+    "png": null
+  },
+  "subtract": {
+    "slide": 15,
+    "shape": "Graphic 202",
+    "png": null
+  },
+  "do not enter": {
+    "slide": 15,
+    "shape": "Graphic 202",
+    "png": null
+  },
+  "reduce": {
+    "slide": 15,
+    "shape": "Graphic 202",
+    "png": null
+  },
+  "blocked": {
+    "slide": 15,
+    "shape": "Graphic 202",
+    "png": null
+  },
+  "missing": {
+    "slide": 15,
+    "shape": "Graphic 208",
+    "png": null
+  },
+  "remove": {
+    "slide": 15,
+    "shape": "Graphic 208",
+    "png": null
+  },
+  "help": {
+    "slide": 15,
+    "shape": "Graphic 214",
+    "png": null
+  },
+  "answer": {
+    "slide": 15,
+    "shape": "Graphic 214",
+    "png": null
+  },
+  "unknown": {
+    "slide": 15,
+    "shape": "Graphic 214",
+    "png": null
+  },
+  "info": {
+    "slide": 15,
+    "shape": "object 121",
+    "png": null
+  },
+  "information": {
+    "slide": 15,
+    "shape": "object 121",
+    "png": null
+  },
+  "checkmark": {
+    "slide": 15,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "yes": {
+    "slide": 15,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "affirmative": {
+    "slide": 15,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "certified": {
+    "slide": 15,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "approved": {
+    "slide": 15,
+    "shape": "Graphic 234",
+    "png": null
+  },
+  "phishing": {
+    "slide": 15,
+    "shape": "Graphic 240",
+    "png": null
+  },
+  "outbound": {
+    "slide": 15,
+    "shape": "Graphic 240",
+    "png": null
+  },
+  "prospect": {
+    "slide": 15,
+    "shape": "Graphic 240",
+    "png": null
+  },
+  "prospecting": {
+    "slide": 15,
+    "shape": "Graphic 240",
+    "png": null
+  },
+  "zigzag": {
+    "slide": 16,
+    "shape": "Graphic 93",
+    "png": null
+  },
+  "zig zag": {
+    "slide": 16,
+    "shape": "Graphic 93",
+    "png": null
+  },
+  "scale": {
+    "slide": 16,
+    "shape": "Graphic 105",
+    "png": null
+  },
+  "upstairs": {
+    "slide": 16,
+    "shape": "Graphic 111",
+    "png": null
+  },
+  "stairs": {
+    "slide": 16,
+    "shape": "Graphic 111",
+    "png": null
+  },
+  "upward": {
+    "slide": 16,
+    "shape": "Graphic 111",
+    "png": null
+  },
+  "movement": {
+    "slide": 16,
+    "shape": "Graphic 111",
+    "png": null
+  },
+  "momentum": {
+    "slide": 16,
+    "shape": "Graphic 111",
+    "png": null
+  },
+  "downstairs": {
+    "slide": 16,
+    "shape": "Graphic 117",
+    "png": null
+  },
+  "downward": {
+    "slide": 16,
+    "shape": "Graphic 117",
+    "png": null
+  },
+  "private": {
+    "slide": 16,
+    "shape": "Graphic 123",
+    "png": null
+  },
+  "insecure": {
+    "slide": 16,
+    "shape": "Graphic 130",
+    "png": null
+  },
+  "unlocked": {
+    "slide": 16,
+    "shape": "Graphic 130",
+    "png": null
+  },
+  "qr": {
+    "slide": 16,
+    "shape": "Graphic 136",
+    "png": null
+  },
+  "qr code": {
+    "slide": 16,
+    "shape": "Graphic 136",
+    "png": null
+  },
+  "scan": {
+    "slide": 16,
+    "shape": "Graphic 136",
+    "png": null
+  },
+  "dial": {
+    "slide": 16,
+    "shape": "Graphic 142",
+    "png": null
+  },
+  "fingers": {
+    "slide": 16,
+    "shape": "Graphic 142",
+    "png": null
+  },
+  "keypad": {
+    "slide": 16,
+    "shape": "Graphic 142",
+    "png": null
+  }
+}

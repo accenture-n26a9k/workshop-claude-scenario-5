@@ -1,0 +1,101 @@
+{
+  "name": "Accenture",
+  "description": "Accenture MasterBrand template — Arial/Arial Black fonts, 7 layouts, white cover, white section divider",
+  "template": "assets/masters/accenture.pptx",
+  "cover_text_color": "BLACK",
+  "layout_indices": {
+    "cover": 0,
+    "content": 2,
+    "content_1col": 1,
+    "content_headline_only": 4,
+    "content_subtitle": 3,
+    "content_subhead_subtitle": 5,
+    "section": 6
+  },
+  "layout_notes": {
+    "cover": {
+      "background": "white",
+      "note": "Layout 0: 'Title: White3+Image'. White background — use BLACK text. idx=0 center title @1.04in, idx=1 subtitle @2.62in, idx=2 date @3.49in, idx=12 body text @3.68in.",
+      "placeholders": {
+        "idx_0":  {"role": "title",    "note": "main title — BLACK, bold, CENTER_TITLE"},
+        "idx_1":  {"role": "subtitle", "note": "subtitle — BLACK"},
+        "idx_2":  {"role": "date",     "note": "date — BLACK, small"},
+        "idx_12": {"role": "body",     "note": "body text placeholder — BLACK"}
+      }
+    },
+    "content": {
+      "title_idx": 0,
+      "title_y": 0.42,
+      "title_h": 0.48,
+      "breadcrumb_idx": 11,
+      "breadcrumb_y": 0.08,
+      "breadcrumb_h": 0.27,
+      "message_line_idx": null,
+      "message_line_y": 0.95,
+      "message_line_h": 0.45,
+      "content_area_y": 1.50,
+      "note": "Layout 2: '3_Blank - Light'. Title idx=0 @0.30in (0.34in tall). Breadcrumb idx=11 @0.06in. Body idx=10 @0.63in. Footer idx=20, SlideNumber idx=21."
+    },
+    "content_1col": {
+      "note": "Layout 1: '1_Short Headline and 1 Column'. Title idx=0 @0.30in, Content idx=18 @0.78in (12.64in tall). Footer idx=20, SlideNumber idx=21."
+    },
+    "content_headline_only": {
+      "note": "Layout 4: 'Long Headline Only'. Title idx=0 @0.30in (0.63in tall). Footer idx=3, SlideNumber idx=10. Clean canvas for pattern shapes."
+    },
+    "content_subtitle": {
+      "note": "Layout 3: 'Short Headline-subtitle'. Title idx=0 @0.39in, Subtitle idx=11 @0.71in. Footer idx=3, SlideNumber idx=12."
+    },
+    "content_subhead_subtitle": {
+      "note": "Layout 5: '1_Subhead (top) and Subtitle'. Subhead idx=36 @0.10in, Title idx=0 @0.39in, Subtitle idx=37 @0.76in. Footer idx=10, SlideNumber idx=11."
+    },
+    "section": {
+      "background": "white",
+      "note": "Layout 6: 'Title Master: White'. White background — use BLACK text. idx=0 center title @0.36in (2.43in tall), idx=13 body @2.79in (2.49in tall).",
+      "placeholders": {
+        "idx_0":  {"role": "title",       "note": "section title — BLACK, bold, CENTER_TITLE"},
+        "idx_13": {"role": "description", "note": "section description — BLACK, body text area"}
+      }
+    }
+  },
+  "tokens": {
+    "primary":        "#A100FF",
+    "primary_medium": "#7500C0",
+    "primary_light":  "#E6DCFF",
+    "primary_dark":   "#460073",
+    "background":     "#FFFFFF",
+    "surface":        "#F1F1EF",
+    "text_heading":   "#000000",
+    "text_body":      "#333333",
+    "text_muted":     "#818180",
+    "border":         "#CFCFCF"
+  },
+  "theme_xml_colors": {
+    "dk1": "#000000",
+    "lt1": "#FFFFFF",
+    "dk2": "#595959",
+    "lt2": "#D8D8D8",
+    "accent1": "#7E00FF",
+    "accent2": "#FF0000",
+    "accent3": "#2800FF",
+    "accent4": "#00BAFF",
+    "accent5": "#00FF7D",
+    "accent6": "#FFEA00",
+    "hlink": "#2800FF",
+    "folHlink": "#7E00FF"
+  },
+  "fonts": {
+    "major_latin": "Arial Black",
+    "minor_latin": "Arial",
+    "major_ea": "",
+    "minor_ea": ""
+  },
+  "all_layouts": [
+    {"idx": 0, "name": "Title: White3+Image",              "category": "cover"},
+    {"idx": 1, "name": "1_Short Headline and 1 Column",    "category": "content"},
+    {"idx": 2, "name": "3_Blank - Light",                  "category": "content"},
+    {"idx": 3, "name": "Short Headline-subtitle",          "category": "content"},
+    {"idx": 4, "name": "Long Headline Only",               "category": "content"},
+    {"idx": 5, "name": "1_Subhead (top) and Subtitle",     "category": "content"},
+    {"idx": 6, "name": "Title Master: White",              "category": "section"}
+  ]
+}
