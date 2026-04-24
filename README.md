@@ -77,36 +77,61 @@ The one-sentence version: a chatbot answers the question in front of it. The Sta
 
 ## Architecture
 
-### Coordinator + Specialist Model
+### The whole system in one picture
 
-```
-Inbound Message (Ops Channel)
-      │
-      ▼
-┌─────────────────────────────────────┐
-│           COORDINATOR               │
-│  • Ingests raw message              │
-│  • Classifies: category + confidence│
-│  • Enriches: sender role, history   │
-│  • Validates structured output      │
-│  • Routes to specialist via Task{}  │
-└──────────────┬──────────────────────┘
-               │
-     ┌─────────┴────────────────────────────────┐
-     │       Explicit Task prompt passed         │
-     │  { request_id, raw_message, category,     │
-     │    confidence, sender_role, sla_tier }    │
-     └─────────┬────────────────────────────────┘
-               │
-    ┌──────────┼──────────────────────┐
-    ▼          ▼          ▼           ▼           ▼
-┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐ ┌────────┐
-│ Crew   │ │  Room  │ │  VIP   │ │Safety  │ │Vendor  │
-│Services│ │  Ops   │ │Concier.│ │& CoC   │ │Logist. │
-└────────┘ └────────┘ └────────┘ └────────┘ └────────┘
+Every inbound message takes exactly one of four paths — **auto-resolve, route, escalate, or hard-page** — and two independent safety brakes gate the LLM from taking any irreversible action.
+
+```mermaid
+flowchart TD
+    MSG([📨 <b>Inbound ops message</b><br/>ops Slack channel]):::inbound
+
+    MSG --> L1{{"🛑 <b>Layer 1 Brake</b><br/>deterministic keyword match<br/><i>cannot be prompted away</i>"}}:::brake
+    L1 -- " trigger word " --> HP["🚨 <b>HARD_PAGE</b><br/>safety lead paged<br/>agent stops<br/>audit trail only"]:::hardpage
+    L1 -- " clean " --> ENR
+
+    subgraph COORD [" 🎬 Coordinator "]
+      direction TB
+      ENR["🔍 <b>Enrich</b><br/>sender · history · SLA"]:::coord
+      ENR --> VAL["📐 <b>Classify + Validate</b><br/>Pydantic · 3-try retry loop"]:::coord
+      VAL --> L2{{"⚖️ <b>Layer 2 Brake</b><br/>escalation_rules.yaml<br/><i>Legal-auditable</i>"}}:::brake
+    end
+
+    L2 --> PKT(["📦 <b>SpecialistTask</b><br/>self-contained · zero shared state"]):::packet
+    PKT --> RT{{"🎯 <b>Route by category</b>"}}:::router
+
+    RT --> CREW["🙋 <b>Crew Services</b><br/>FAQ · auto-reply"]:::auto
+    RT --> ROOM["🎙 <b>Room Ops</b><br/>captain + ticket"]:::route
+    RT --> VIP["💎 <b>VIP Concierge</b><br/>human-confirm"]:::route
+    RT --> VEN["🚚 <b>Vendor Logistics</b>"]:::route
+    RT --> SAFE["🚨 <b>Safety &amp; CoC</b><br/>2 tools · no public writes"]:::critical
+    RT --> ESC["🧑‍💼 <b>Ops Lead Queue</b><br/>PRESS · low-conf · adversarial"]:::human
+
+    CREW -- " AUTO_RESOLVE " --> OUT
+    ROOM -- " ROUTE " --> OUT
+    VIP  -- " ROUTE " --> OUT
+    VEN  -- " ROUTE " --> OUT
+    SAFE -- " ESCALATE / HARD_PAGE " --> OUT
+    ESC  -- " ESCALATE " --> OUT
+    HP   -- " HARD_PAGE " --> OUT
+
+    OUT([📊 <b>coordinator.jsonl</b> + <b>safety_audit.jsonl</b><br/>dashboard polls every 0.5s]):::out
+
+    classDef inbound fill:#0f172a,stroke:#94a3b8,stroke-width:2px,color:#f1f5f9
+    classDef brake fill:#7f1d1d,stroke:#fca5a5,stroke-width:2px,color:#fff
+    classDef hardpage fill:#991b1b,stroke:#fecaca,stroke-width:3px,color:#fff
+    classDef coord fill:#1e3a8a,stroke:#93c5fd,color:#f1f5f9
+    classDef packet fill:#334155,stroke:#cbd5e1,color:#f1f5f9
+    classDef router fill:#7c2d12,stroke:#fdba74,color:#fff
+    classDef auto fill:#14532d,stroke:#86efac,color:#fff
+    classDef route fill:#78350f,stroke:#fcd34d,color:#fff
+    classDef critical fill:#991b1b,stroke:#fca5a5,color:#fff
+    classDef human fill:#581c87,stroke:#d8b4fe,color:#fff
+    classDef out fill:#0f172a,stroke:#64748b,color:#f1f5f9
 ```
 
-**Key architectural constraint:** Task subagents receive **no inherited coordinator context**. Every specialist operates only on what is explicitly passed in its Task prompt. This is a deliberate design decision documented in [ADR-001](adr/001-agent-architecture.md).
+**Read the diagram like this:** a message either **stops** at Layer 1 (red keyword brake, no LLM involvement), or flows through the coordinator into a schema-validated classification, where Layer 2's structured rules can still divert it to a human. Only clean, high-confidence, bounded-impact messages reach a specialist — and every specialist receives a **self-contained task packet** with no inherited coordinator context.
+
+> **Architectural constraint (load-bearing):** Task subagents never see the coordinator's conversation. Every specialist operates only on what is explicitly packed into its Task prompt. See [ADR-001](adr/001-agent-architecture.md).
 
 ### The Five Specialists
 
@@ -163,7 +188,27 @@ Handles catering delays, booth power, deliveries, external vendor issues.
 
 ## The Brake System
 
-Two layers. Independent. Both required.
+Two layers. Independent. Both required. The hook fires *before* the LLM can act; the rules fire *after* classification as a structured safety net. An attacker who defeats one still has to defeat the other.
+
+```mermaid
+flowchart TB
+    MSG([📨 message])
+
+    MSG --> L1["🛑 <b>Layer 1 — PreToolUse Hook</b><br/>deterministic string match<br/>runs BEFORE any write tool<br/><i>not an LLM decision · cannot be prompted away</i>"]:::layer
+    L1 -. " match " .-> PAGE[🚨 <b>page · block · audit</b><br/>no public log · no auto-reply]:::danger
+    L1 -- " clean " --> LLM[🧠 LLM classification<br/>Pydantic-validated]:::neutral
+
+    LLM --> L2["⚖️ <b>Layer 2 — Escalation Rules</b><br/>YAML config · Legal-auditable<br/>structured conditions<br/><i>no prompt magic</i>"]:::layer
+    L2 -. " SAFETY " .-> PAGE
+    L2 -. " COC · PRESS · adversarial<br/> low-confidence · $&gt;5k · VIP HIGH " .-> HUMAN[🧑‍💼 escalate to human]:::warn
+    L2 -- " clean " --> SPEC[🎯 route to specialist]:::ok
+
+    classDef layer fill:#1e293b,stroke:#94a3b8,stroke-width:2px,color:#f1f5f9
+    classDef neutral fill:#334155,stroke:#cbd5e1,color:#f1f5f9
+    classDef danger fill:#991b1b,stroke:#fecaca,stroke-width:2px,color:#fff
+    classDef warn fill:#581c87,stroke:#d8b4fe,color:#fff
+    classDef ok fill:#14532d,stroke:#86efac,color:#fff
+```
 
 ### Layer 1: PreToolUse Hook (Hard Stop, Deterministic)
 
@@ -214,29 +259,35 @@ These live in a config file, not in a prompt. Auditable by Legal without reading
 
 ## Validation-Retry Loop
 
-Every coordinator classification passes through a schema validator before routing. On failure, the specific error is fed back to Claude and retried up to 3 times.
+Every coordinator classification passes through a Pydantic validator *before* it is allowed near a specialist. If the LLM produces a malformed or contradictory payload, the **specific error text** is fed back into the next prompt — the classifier self-corrects against the schema.
 
-```
-Coordinator Output
-      │
-      ▼
-┌─────────────┐   PASS    ┌──────────────────┐
-│  Validator  │ ────────▶ │ Route to         │
-│  (schema)   │           │ Specialist       │
-└──────┬──────┘           └──────────────────┘
-       │ FAIL
-       ▼
-┌──────────────────────────────────┐
-│  Feed specific error back:       │
-│  "impact_tier required when      │
-│   category is VIP or SPONSOR"    │
-└──────────────┬───────────────────┘
-               │ retry (max 3)
-               ▼
-         FAIL after 3 attempts → ESCALATE with validation_failure flag
+```mermaid
+sequenceDiagram
+    autonumber
+    participant C as 🎬 Coordinator
+    participant V as 📐 Validator
+    participant K as 🤖 Classifier<br/>(LLM)
+    participant S as ✅ Schema
+
+    C->>V: validate_with_retry(msg)
+    loop up to 3 attempts
+        V->>K: classify(msg, prior_error?)
+        K-->>V: structured tool-call payload
+        V->>S: Classification(**payload)
+        alt valid ✓
+            S-->>V: Classification object
+            V-->>C: (classification, attempt, ok)
+        else ValidationError ✗
+            S-->>V: specific error text<br/>("impact_tier required for VIP")
+            V->>V: inject error into next prompt
+        end
+    end
+    opt all 3 attempts failed
+        V-->>C: fallback → UNKNOWN · ESCALATE<br/>error_type = validation_failure
+    end
 ```
 
-Every request logs: `request_id`, `attempt_count`, `error_type`, `final_classification`, `routing_target`, `latency_ms`. Every decision is replayable from the log alone.
+Three tries, then a **safe fallback** that never guesses — always escalates to a human with `validation_failure` stamped on the record. Every request logs `request_id`, `attempt_count`, `error_type`, `final_classification`, `routing_target`, `latency_ms`. Every decision is replayable from the log alone.
 
 ---
 
