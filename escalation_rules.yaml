@@ -1,0 +1,22 @@
+escalation_rules:
+  - condition: "category == SAFETY"
+    action: HARD_PAGE
+    threshold: null  # always, no confidence floor
+
+  - condition: "category == COC"
+    action: HUMAN_ONLY
+    threshold: 0.4   # low bar intentional — err toward human
+
+  - condition: "category == PRESS"
+    action: HUMAN_ONLY
+    threshold: null  # always
+
+  - condition: "category == VIP and impact_tier == HIGH"
+    action: ESCALATE
+    confidence_ceiling: 0.85  # escalate if agent is uncertain
+
+  - condition: "estimated_dollar_impact > 5000"
+    action: ESCALATE
+
+  - condition: "confidence < 0.60 and category != FAQ"
+    action: ESCALATE

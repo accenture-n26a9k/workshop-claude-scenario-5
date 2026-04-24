@@ -1,0 +1,64 @@
+{
+  "entries": [
+    {
+      "id": "faq001",
+      "question": "Where is badge pickup?",
+      "answer": "Badge pickup is at the main registration desk in Hall A, Level 1. Open 7am–6pm both days.",
+      "tags": ["badge", "registration", "pickup"]
+    },
+    {
+      "id": "faq002",
+      "question": "What is the wifi password?",
+      "answer": "Network: ConferenceGuest | Password: Stage2024! (case sensitive)",
+      "tags": ["wifi", "internet", "network", "password"]
+    },
+    {
+      "id": "faq003",
+      "question": "Where is the coffee station on floor 2?",
+      "answer": "Coffee stations are located outside Room 12 and near the elevator bank on Floor 2. Refilled every 30 minutes.",
+      "tags": ["coffee", "food", "floor 2", "refreshments"]
+    },
+    {
+      "id": "faq004",
+      "question": "What time does the keynote start?",
+      "answer": "Day 1 keynote: 9:00am in Main Stage (Hall A). Day 2 keynote: 9:30am in Main Stage (Hall A). Doors open 30 minutes before.",
+      "tags": ["keynote", "schedule", "time", "main stage"]
+    },
+    {
+      "id": "faq005",
+      "question": "Is there a nursing room?",
+      "answer": "Yes — nursing room is on Level 1, Room 104, next to the first-aid station. Keypad code: 2048. Available all day.",
+      "tags": ["nursing", "accessibility", "family", "room 104"]
+    },
+    {
+      "id": "faq006",
+      "question": "Where is the nearest restroom?",
+      "answer": "Restrooms are located at the end of each corridor on every floor. Gender-neutral restroom on Level 2, near Room 21.",
+      "tags": ["restroom", "bathroom", "toilet"]
+    },
+    {
+      "id": "faq007",
+      "question": "Where can I find the session schedule?",
+      "answer": "Full schedule is at sched.conference.example.com or in the Conference app. Printed copies at the info desk in Hall A.",
+      "tags": ["schedule", "sessions", "agenda", "app"]
+    },
+    {
+      "id": "faq008",
+      "question": "Is there luggage storage?",
+      "answer": "Yes — luggage storage is at Coat Check, Hall A Level 1, near the main entrance. Free of charge.",
+      "tags": ["luggage", "storage", "coat check", "bags"]
+    },
+    {
+      "id": "faq009",
+      "question": "Where is the nearest ATM?",
+      "answer": "ATMs are in the lobby on Level 1 near the main entrance and in the food hall on Level 3.",
+      "tags": ["atm", "cash", "money"]
+    },
+    {
+      "id": "faq010",
+      "question": "Where is the speaker ready room?",
+      "answer": "Speaker Ready Room is on Level 2, Room 202. Open from 7am. AV technician on-site. Bring your slides on USB or upload via the speaker portal.",
+      "tags": ["speaker", "ready room", "slides", "presentation"]
+    }
+  ]
+}

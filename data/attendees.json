@@ -1,0 +1,41 @@
+{
+  "attendees": {
+    "att_001": {
+      "name": "Jordan Lee",
+      "badge_id": "B-4821",
+      "tier": "standard",
+      "dietary": ["vegan"],
+      "sessions": ["keynote-day1", "workshop-r21-1030", "talk-hallb-1400"],
+      "channel": "attendee-general",
+      "message_history_count": 0
+    },
+    "att_002": {
+      "name": "Dr. Amara Osei",
+      "badge_id": "B-1001",
+      "tier": "speaker",
+      "dietary": [],
+      "sessions": ["talk-room7-1130"],
+      "channel": "speaker-channel",
+      "message_history_count": 1
+    },
+    "att_003": {
+      "name": "Carlos Mendez",
+      "badge_id": "B-7701",
+      "tier": "vip",
+      "dietary": ["celiac", "gluten-free"],
+      "sessions": ["keynote-day1", "vip-lunch", "keynote-day2"],
+      "channel": "vip-channel",
+      "message_history_count": 2,
+      "concierge_id": "concierge_001"
+    },
+    "att_004": {
+      "name": "Unknown",
+      "badge_id": null,
+      "tier": "standard",
+      "dietary": [],
+      "sessions": [],
+      "channel": "ops",
+      "message_history_count": 0
+    }
+  }
+}

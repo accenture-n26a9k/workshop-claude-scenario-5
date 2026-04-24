@@ -1,0 +1,84 @@
+{
+  "vendors": {
+    "vendor_001": {
+      "name": "FreshBrew Catering",
+      "type": "catering",
+      "contact": "ops@freshbrew.example.com",
+      "phone": "+1-555-2001",
+      "dock_assignment": "Dock B",
+      "schedule": "07:00–19:00",
+      "coordinator_id": "vendor_coord_001"
+    },
+    "vendor_002": {
+      "name": "TechDisplay Expo",
+      "type": "booth_setup",
+      "contact": "events@techdisplay.example.com",
+      "phone": "+1-555-2002",
+      "dock_assignment": "Dock A",
+      "schedule": "06:00–22:00",
+      "coordinator_id": "vendor_coord_001"
+    },
+    "vendor_003": {
+      "name": "PowerPro AV Rental",
+      "type": "av_equipment",
+      "contact": "support@powerpro.example.com",
+      "phone": "+1-555-2003",
+      "dock_assignment": "Dock C",
+      "schedule": "07:00–20:00",
+      "coordinator_id": "vendor_coord_002"
+    },
+    "vendor_004": {
+      "name": "QuickShip Logistics",
+      "type": "delivery",
+      "contact": "dispatch@quickship.example.com",
+      "phone": "+1-555-2004",
+      "dock_assignment": "Dock A",
+      "schedule": "08:00–17:00",
+      "coordinator_id": "vendor_coord_001"
+    }
+  },
+  "coordinators": {
+    "vendor_coord_001": {
+      "name": "Lin Petrov",
+      "phone": "+1-555-3001",
+      "channel": "ops-vendors"
+    },
+    "vendor_coord_002": {
+      "name": "Ben Okafor",
+      "phone": "+1-555-3002",
+      "channel": "ops-vendors"
+    }
+  },
+  "sponsors": {
+    "sponsor_001": {
+      "company": "Nexus Corp",
+      "tier": "platinum",
+      "booth": "E-01",
+      "contact": "jane.smith@nexus.example.com",
+      "concierge_id": "concierge_001",
+      "power_circuit": "expo-e01",
+      "sla_tier": "HIGH"
+    },
+    "sponsor_002": {
+      "company": "DataVault Inc",
+      "tier": "gold",
+      "booth": "E-07",
+      "contact": "mark.jones@datavault.example.com",
+      "concierge_id": "concierge_002",
+      "power_circuit": "expo-e07",
+      "sla_tier": "HIGH"
+    }
+  },
+  "concierges": {
+    "concierge_001": {
+      "name": "Elena Vasquez",
+      "phone": "+1-555-4001",
+      "channel": "vip-concierge"
+    },
+    "concierge_002": {
+      "name": "Raj Patel",
+      "phone": "+1-555-4002",
+      "channel": "vip-concierge"
+    }
+  }
+}

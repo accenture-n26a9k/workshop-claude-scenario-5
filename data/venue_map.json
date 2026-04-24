@@ -1,0 +1,90 @@
+{
+  "rooms": {
+    "Hall A": {
+      "capacity": 500,
+      "floor": 1,
+      "captain_id": "captain_001",
+      "av_system": "Crestron-HallA",
+      "av_status": "operational",
+      "room_type": "main_stage"
+    },
+    "Hall B": {
+      "capacity": 300,
+      "floor": 1,
+      "captain_id": "captain_002",
+      "av_system": "Crestron-HallB",
+      "av_status": "operational",
+      "room_type": "breakout"
+    },
+    "Room 7": {
+      "capacity": 80,
+      "floor": 2,
+      "captain_id": "captain_003",
+      "av_system": "Extron-R7",
+      "av_status": "operational",
+      "room_type": "breakout"
+    },
+    "Room 12": {
+      "capacity": 120,
+      "floor": 2,
+      "captain_id": "captain_004",
+      "av_system": "Extron-R12",
+      "av_status": "operational",
+      "room_type": "breakout"
+    },
+    "Room 21": {
+      "capacity": 60,
+      "floor": 3,
+      "captain_id": "captain_005",
+      "av_system": "Extron-R21",
+      "av_status": "operational",
+      "room_type": "workshop"
+    },
+    "Expo Hall": {
+      "capacity": 1000,
+      "floor": 1,
+      "captain_id": "captain_006",
+      "av_system": "QSC-Expo",
+      "av_status": "operational",
+      "room_type": "expo"
+    }
+  },
+  "captains": {
+    "captain_001": {
+      "name": "Marcus Johnson",
+      "phone": "+1-555-0101",
+      "channel": "ops-hall-a",
+      "available": true
+    },
+    "captain_002": {
+      "name": "Priya Nair",
+      "phone": "+1-555-0102",
+      "channel": "ops-hall-b",
+      "available": true
+    },
+    "captain_003": {
+      "name": "Tom Reyes",
+      "phone": "+1-555-0103",
+      "channel": "ops-room7",
+      "available": true
+    },
+    "captain_004": {
+      "name": "Sara Kim",
+      "phone": "+1-555-0104",
+      "channel": "ops-room12",
+      "available": true
+    },
+    "captain_005": {
+      "name": "Derek Walsh",
+      "phone": "+1-555-0105",
+      "channel": "ops-room21",
+      "available": true
+    },
+    "captain_006": {
+      "name": "Aisha Okonkwo",
+      "phone": "+1-555-0106",
+      "channel": "ops-expo",
+      "available": true
+    }
+  }
+}
