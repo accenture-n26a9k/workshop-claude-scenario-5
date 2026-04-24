@@ -1,2 +1,4 @@
 {"request_id": "test-safety-001", "routing_decision": "HARD_PAGE", "category": "SAFETY", "matched_keywords": ["fire", "alarm"], "latency_ms": 0.0}
 {"request_id": "test-safe-001", "category": "FAQ", "confidence": 0.9, "routing_decision": "AUTO_RESOLVE", "routing_target": "FAQ", "attempt_count": 1, "error_type": null, "adversarial_flag": false, "adversarial_type": null, "sla_tier": "LOW", "reasoning": "test", "specialist_result": {"action": "ok"}, "latency_ms": 0.0}
+{"request_id": "test-safety-001", "routing_decision": "HARD_PAGE", "category": "SAFETY", "matched_keywords": ["fire", "alarm"], "latency_ms": 0.0}
+{"request_id": "test-safe-001", "category": "FAQ", "confidence": 0.9, "routing_decision": "AUTO_RESOLVE", "routing_target": "FAQ", "attempt_count": 1, "error_type": null, "adversarial_flag": false, "adversarial_type": null, "sla_tier": "LOW", "reasoning": "test", "specialist_result": {"action": "ok"}, "latency_ms": 0.0}

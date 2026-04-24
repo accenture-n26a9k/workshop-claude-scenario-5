@@ -77,7 +77,7 @@ Classify every inbound message: category, confidence, routing decision.
 CATEGORIES:
 - FAQ         — Answerable from knowledge base (badge, schedule, wifi, maps, food, directions)
 - ROOM_OPS    — AV failures, facilities issues, room captain coordination
-- VIP         — Sponsor escalations, VIP attendee requests, accessibility needs
+- VIP         — Sponsor escalations, VIP guest requests, accessibility needs
 - SAFETY      — Fire, medical, evacuation, physical threats, weapons
 - COC         — Code of conduct reports, harassment, inappropriate behaviour
 - VENDOR      — Catering delays, booth power, deliveries, external vendor issues

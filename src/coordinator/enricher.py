@@ -17,7 +17,7 @@ def _load(filename: str) -> dict:
     return json.loads((_DATA / filename).read_text())
 
 
-def _infer_sender(raw_message: str, attendees: dict) -> tuple[str | None, str, int]:
+def _infer_sender(raw_message: str, crew: dict) -> tuple[str | None, str, int]:
     """
     Returns (sender_id, sender_channel, history_count).
     In production this would come from a session/identity header.
@@ -25,9 +25,9 @@ def _infer_sender(raw_message: str, attendees: dict) -> tuple[str | None, str, i
     """
     lower = raw_message.lower()
 
-    for att_id, att in attendees["attendees"].items():
-        if att["name"].lower() in lower:
-            return att_id, att["channel"], att["message_history_count"]
+    for crew_id, member in crew["crew"].items():
+        if member["name"].lower() in lower:
+            return crew_id, member["channel"], member["message_history_count"]
 
     # Default: unknown sender on the ops channel
     return None, "ops", 0
@@ -41,8 +41,8 @@ def enrich(raw_message: str, request_id: str | None = None) -> dict:
     if not request_id:
         request_id = str(uuid.uuid4())
 
-    attendees = _load("attendees.json")
-    sender_id, sender_channel, history_count = _infer_sender(raw_message, attendees)
+    crew = _load("crew_roles.json")
+    sender_id, sender_channel, history_count = _infer_sender(raw_message, crew)
 
     return {
         "request_id": request_id,

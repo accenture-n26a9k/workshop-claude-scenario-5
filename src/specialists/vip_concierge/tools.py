@@ -19,13 +19,13 @@ def _load(filename: str) -> dict:
 
 def read_vip_profile(sender_id: str) -> dict:
     """
-    Return VIP preferences, dietary, and access needs.
+    Return VIP guest preferences, dietary, and access needs.
     Does NOT expose financial tier or contract value.
     """
-    attendees = _load("attendees.json")
-    record = attendees["attendees"].get(sender_id)
+    guests = _load("vip_guests.json")
+    record = guests["vip_guests"].get(sender_id)
 
-    if not record or record.get("tier") != "vip":
+    if not record:
         return {
             "isError": True,
             "reason": "VIP_RECORD_NOT_FOUND",
@@ -36,7 +36,7 @@ def read_vip_profile(sender_id: str) -> dict:
         "found": True,
         "name": record["name"],
         "dietary": record["dietary"],
-        "sessions": record["sessions"],
+        "access_needs": record.get("access_needs", []),
         "concierge_id": record.get("concierge_id"),
     }
 

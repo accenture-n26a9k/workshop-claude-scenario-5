@@ -58,13 +58,11 @@ The coordinator then spawns one of five specialist subagents. **Task subagents r
 
 | Specialist | Handles | Key constraint |
 |---|---|---|
-| `crew_services` (code: `attendee_services`) | Crew FAQ, schedule, logistics, internal questions | Read-only tools + `send_reply` to origin channel only |
+| `crew_services` | Crew FAQ, schedule, logistics, internal questions | Read-only tools + `send_reply` to origin channel only |
 | `room_ops` | AV failures, facilities, captain routing | Must call `lookup_room_captain` before `create_ops_ticket` |
 | `vip_concierge` | Sponsors, VIPs, accessibility | Never auto-replies without human confirmation |
 | `safety_coc` | Safety incidents, CoC reports | 2 tools only; no public channel writes; always human |
 | `vendor_logistics` | Catering, booth power, deliveries | Never contacts external vendor directly |
-
-> **Note:** The README names the first specialist `crew_services`; the current code directory is `attendee_services`. These are the same specialist — rename pending.
 
 Each specialist has ~4–5 tools. Tool descriptions in `tools.py` explicitly state what each tool does *not* do — this is load-bearing for routing correctness.
 

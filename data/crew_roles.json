@@ -1,0 +1,60 @@
+{
+  "crew": {
+    "crew_001": {
+      "name": "Marcus Johnson",
+      "role": "room_captain",
+      "assigned_rooms": ["Hall A"],
+      "channel": "ops-hall-a",
+      "message_history_count": 3
+    },
+    "crew_002": {
+      "name": "Priya Nair",
+      "role": "room_captain",
+      "assigned_rooms": ["Hall B"],
+      "channel": "ops-hall-b",
+      "message_history_count": 1
+    },
+    "crew_003": {
+      "name": "Tom Reyes",
+      "role": "av_technician",
+      "assigned_rooms": ["Room 7", "Room 12"],
+      "channel": "ops-av",
+      "message_history_count": 0
+    },
+    "crew_004": {
+      "name": "Sara Kim",
+      "role": "av_technician",
+      "assigned_rooms": ["Hall A", "Hall B"],
+      "channel": "ops-av",
+      "message_history_count": 2
+    },
+    "crew_005": {
+      "name": "Elena Vasquez",
+      "role": "vip_concierge",
+      "assigned_rooms": [],
+      "channel": "vip-concierge",
+      "message_history_count": 0
+    },
+    "crew_006": {
+      "name": "Lin Petrov",
+      "role": "vendor_coordinator",
+      "assigned_rooms": [],
+      "channel": "ops-vendors",
+      "message_history_count": 1
+    },
+    "crew_007": {
+      "name": "Aisha Okonkwo",
+      "role": "room_captain",
+      "assigned_rooms": ["Expo Hall"],
+      "channel": "ops-expo",
+      "message_history_count": 0
+    },
+    "crew_008": {
+      "name": "Derek Walsh",
+      "role": "facilities",
+      "assigned_rooms": [],
+      "channel": "ops-facilities",
+      "message_history_count": 0
+    }
+  }
+}

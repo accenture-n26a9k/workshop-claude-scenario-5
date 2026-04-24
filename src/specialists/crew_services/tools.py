@@ -1,5 +1,6 @@
 """
-Attendee Services tools.
+Crew Services tools.
+Handles the high-volume internal crew FAQ queue.
 All tools are read-only except send_reply, which sends to the origin channel only.
 """
 
@@ -17,7 +18,7 @@ def _load(filename: str) -> dict:
 
 def lookup_faq(query: str) -> dict:
     """
-    Search the curated FAQ knowledge base.
+    Search the curated internal crew FAQ knowledge base.
     Does NOT generate answers — only returns from the KB.
     Returns the best matching entry or isError if no match found.
     """
@@ -46,40 +47,39 @@ def lookup_faq(query: str) -> dict:
     return {
         "isError": True,
         "reason": "NO_MATCH",
-        "guidance": "No FAQ entry matched this query. Do not generate an answer — escalate to human ops.",
+        "guidance": "No FAQ entry matched this query. Do not generate an answer — escalate to ops lead.",
     }
 
 
-def read_attendee_record(sender_id: str) -> dict:
+def read_crew_record(sender_id: str) -> dict:
     """
-    Read registration, dietary, and session data for an attendee.
+    Read role, room assignments, and channel for a crew member.
     Does NOT write or modify any record.
     Returns isError if sender_id is unknown.
     """
-    attendees = _load("attendees.json")
+    crew = _load("crew_roles.json")
+    record = crew["crew"].get(sender_id)
 
-    record = attendees["attendees"].get(sender_id)
     if not record:
         return {
             "isError": True,
-            "reason": "ATTENDEE_NOT_FOUND",
-            "guidance": f"No attendee record for sender_id={sender_id}. Ask them to visit the registration desk.",
+            "reason": "CREW_MEMBER_NOT_FOUND",
+            "guidance": f"No crew record for sender_id={sender_id}. Direct them to the Staff Check-In desk.",
         }
 
     return {
         "found": True,
-        "badge_id": record["badge_id"],
         "name": record["name"],
-        "tier": record["tier"],
-        "dietary": record["dietary"],
-        "session_count": len(record["sessions"]),
+        "role": record["role"],
+        "assigned_rooms": record["assigned_rooms"],
+        "message_history_count": record["message_history_count"],
     }
 
 
 def read_schedule(session_query: str) -> dict:
     """
-    Return current session schedule with room assignments.
-    Does NOT access speaker-only schedule data.
+    Return current session schedule with room and time.
+    Does NOT return restricted schedule data (speaker-only, private sessions).
     """
     schedule = {
         "keynote-day1": {"title": "Opening Keynote", "room": "Hall A", "time": "09:00"},
@@ -87,6 +87,7 @@ def read_schedule(session_query: str) -> dict:
         "workshop-r21-1030": {"title": "Hands-on Workshop: AI Tooling", "room": "Room 21", "time": "10:30"},
         "talk-hallb-1400": {"title": "Panel: Future of Data", "room": "Hall B", "time": "14:00"},
         "talk-room7-1130": {"title": "Deep Dive: Distributed Systems", "room": "Room 7", "time": "11:30"},
+        "talk-room12-1300": {"title": "Security at Scale", "room": "Room 12", "time": "13:00"},
     }
 
     query_lower = session_query.lower()
@@ -105,14 +106,14 @@ def read_schedule(session_query: str) -> dict:
     return {
         "isError": True,
         "reason": "NO_SESSIONS_FOUND",
-        "guidance": f"No sessions matched '{session_query}'. Try the full schedule at sched.conference.example.com",
+        "guidance": f"No sessions matched '{session_query}'. Check the full schedule at sched.conference.example.com",
     }
 
 
 def send_reply(sender_channel: str, message: str) -> dict:
     """
-    Post an auto-reply to the attendee's originating channel.
-    Does NOT send to any channel other than origin.
+    Post an auto-reply to the crew member's originating channel.
+    Does NOT send to any channel other than the origin.
     sender_channel must match the channel from the original request.
     """
     print(f"  [REPLY → {sender_channel}]: {message}")
@@ -123,30 +124,31 @@ TOOL_DEFINITIONS = [
     {
         "name": "lookup_faq",
         "description": (
-            "Search the curated FAQ knowledge base for known questions. "
-            "Use for: badge pickup, wifi, coffee, restrooms, schedule, maps, nursing room. "
+            "Search the internal crew FAQ knowledge base. "
+            "Use for: crew badge/credential pickup, crew entrance, rest area, green room, "
+            "catering, parking, radio channels, loading dock, AV equipment requests, escalation procedures. "
             "Does NOT generate answers — returns from the KB only. "
             "If no match: return isError and do not attempt to answer from training data."
         ),
         "input_schema": {
             "type": "object",
             "properties": {
-                "query": {"type": "string", "description": "The attendee's question or keywords"},
+                "query": {"type": "string", "description": "The crew member's question or keywords"},
             },
             "required": ["query"],
         },
     },
     {
-        "name": "read_attendee_record",
+        "name": "read_crew_record",
         "description": (
-            "Read registration, dietary, and session data for a known attendee. "
+            "Read role, room assignments, and channel for a known crew member. "
             "Does NOT write or modify any record. "
             "Use sender_id from the request context."
         ),
         "input_schema": {
             "type": "object",
             "properties": {
-                "sender_id": {"type": "string", "description": "Attendee ID from request context"},
+                "sender_id": {"type": "string", "description": "Crew member ID from request context"},
             },
             "required": ["sender_id"],
         },
@@ -154,9 +156,9 @@ TOOL_DEFINITIONS = [
     {
         "name": "read_schedule",
         "description": (
-            "Return current session schedule with room and time. "
-            "Does NOT return speaker-only data. "
-            "Use for questions about session times, rooms, or the keynote."
+            "Return session schedule with room and time for crew reference. "
+            "Does NOT return restricted or speaker-only data. "
+            "Use for crew questions about session times, room assignments, or the keynote."
         ),
         "input_schema": {
             "type": "object",
@@ -169,7 +171,7 @@ TOOL_DEFINITIONS = [
     {
         "name": "send_reply",
         "description": (
-            "Post an auto-reply to the attendee. "
+            "Post an auto-reply to the crew member's originating channel. "
             "ONLY sends to the channel from the original request. "
             "Do not call this until you have a confirmed answer from lookup_faq or read_schedule."
         ),
@@ -186,7 +188,7 @@ TOOL_DEFINITIONS = [
 
 TOOL_HANDLERS = {
     "lookup_faq": lambda inp: lookup_faq(inp["query"]),
-    "read_attendee_record": lambda inp: read_attendee_record(inp["sender_id"]),
+    "read_crew_record": lambda inp: read_crew_record(inp["sender_id"]),
     "read_schedule": lambda inp: read_schedule(inp["session_query"]),
     "send_reply": lambda inp: send_reply(inp["sender_channel"], inp["message"]),
 }

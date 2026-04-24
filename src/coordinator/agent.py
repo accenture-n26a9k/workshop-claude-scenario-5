@@ -79,14 +79,14 @@ def _build_specialist_task(enrichment: dict, classification: Classification) -> 
 
 def _route(task: SpecialistTask) -> dict:
     """Dispatch to the correct specialist. Each specialist is self-contained."""
-    from ..specialists.attendee_services.agent import run as run_attendee
+    from ..specialists.crew_services.agent import run as run_crew
     from ..specialists.room_ops.agent import run as run_room_ops
     from ..specialists.vip_concierge.agent import run as run_vip
     from ..specialists.safety_coc.agent import run as run_safety
     from ..specialists.vendor_logistics.agent import run as run_vendor
 
     routing_map = {
-        Category.FAQ: run_attendee,
+        Category.FAQ: run_crew,
         Category.ROOM_OPS: run_room_ops,
         Category.VIP: run_vip,
         Category.SAFETY: run_safety,

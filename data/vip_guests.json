@@ -1,0 +1,28 @@
+{
+  "vip_guests": {
+    "vip_001": {
+      "name": "Carlos Mendez",
+      "company": "Nexus Corp",
+      "dietary": ["celiac", "gluten-free"],
+      "access_needs": [],
+      "sessions": ["keynote-day1", "vip-lunch", "keynote-day2"],
+      "concierge_id": "concierge_001"
+    },
+    "vip_002": {
+      "name": "Dr. Amara Osei",
+      "company": "DataVault Inc",
+      "dietary": [],
+      "access_needs": ["wheelchair", "elevator-only"],
+      "sessions": ["keynote-day1", "talk-room7-1130"],
+      "concierge_id": "concierge_002"
+    },
+    "vip_003": {
+      "name": "Jordan Lee",
+      "company": "Independent Speaker",
+      "dietary": ["vegan"],
+      "access_needs": [],
+      "sessions": ["keynote-day2", "workshop-r21-1030"],
+      "concierge_id": "concierge_001"
+    }
+  }
+}

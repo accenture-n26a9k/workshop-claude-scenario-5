@@ -2,63 +2,75 @@
   "entries": [
     {
       "id": "faq001",
-      "question": "Where is badge pickup?",
-      "answer": "Badge pickup is at the main registration desk in Hall A, Level 1. Open 7am–6pm both days.",
-      "tags": ["badge", "registration", "pickup"]
+      "question": "Where is the crew badge and credential pickup?",
+      "answer": "Crew credential pickup is at the Staff Check-In desk, Side Entrance Level 1 (not the main public registration). Open from 6:30am. Bring your confirmation email.",
+      "tags": ["badge", "credential", "crew", "check-in", "pickup"]
     },
     {
       "id": "faq002",
-      "question": "What is the wifi password?",
-      "answer": "Network: ConferenceGuest | Password: Stage2024! (case sensitive)",
-      "tags": ["wifi", "internet", "network", "password"]
+      "question": "Where is the crew entrance?",
+      "answer": "Crew entrance is the South Side entrance off Loading Bay Road. Use your crew badge to access. Do not use the main public entrance — it slows badge verification at peak attendee arrival.",
+      "tags": ["crew entrance", "south side", "entrance", "access", "door"]
     },
     {
       "id": "faq003",
-      "question": "Where is the coffee station on floor 2?",
-      "answer": "Coffee stations are located outside Room 12 and near the elevator bank on Floor 2. Refilled every 30 minutes.",
-      "tags": ["coffee", "food", "floor 2", "refreshments"]
+      "question": "Where is the crew rest area?",
+      "answer": "Crew rest area is on Level 2, Room 205 (marked 'Staff Only'). Quiet space with seating, lockers, and phone charging. Separate from the public areas.",
+      "tags": ["rest area", "break room", "crew", "staff", "Hall C", "locker"]
     },
     {
       "id": "faq004",
-      "question": "What time does the keynote start?",
-      "answer": "Day 1 keynote: 9:00am in Main Stage (Hall A). Day 2 keynote: 9:30am in Main Stage (Hall A). Doors open 30 minutes before.",
-      "tags": ["keynote", "schedule", "time", "main stage"]
+      "question": "What time does the keynote green room open?",
+      "answer": "Green room (Speaker Ready Room 202, Level 2) opens at 7:00am both days. AV tech on-site from 7:30am. Speakers should arrive at least 45 minutes before their session.",
+      "tags": ["green room", "keynote", "speaker ready", "room 202", "time"]
     },
     {
       "id": "faq005",
-      "question": "Is there a nursing room?",
-      "answer": "Yes — nursing room is on Level 1, Room 104, next to the first-aid station. Keypad code: 2048. Available all day.",
-      "tags": ["nursing", "accessibility", "family", "room 104"]
+      "question": "Where is the ops channel and how do I join?",
+      "answer": "Ops channel is #event-ops in the crew Slack workspace. You should already be in it. If not, ask your team lead — do not post in the public attendee Slack.",
+      "tags": ["ops channel", "slack", "comms", "join"]
     },
     {
       "id": "faq006",
-      "question": "Where is the nearest restroom?",
-      "answer": "Restrooms are located at the end of each corridor on every floor. Gender-neutral restroom on Level 2, near Room 21.",
-      "tags": ["restroom", "bathroom", "toilet"]
+      "question": "Where is crew catering and what are the meal times?",
+      "answer": "Crew catering is in the Staff Canteen, Level B1. Breakfast 7:00–9:00am, Lunch 12:00–2:00pm, Dinner 6:00–8:00pm. Show your crew badge. Dietary requests submitted in advance are tagged on your record.",
+      "tags": ["catering", "crew meals", "food", "canteen", "lunch", "breakfast", "dinner"]
     },
     {
       "id": "faq007",
-      "question": "Where can I find the session schedule?",
-      "answer": "Full schedule is at sched.conference.example.com or in the Conference app. Printed copies at the info desk in Hall A.",
-      "tags": ["schedule", "sessions", "agenda", "app"]
+      "question": "Where can crew park?",
+      "answer": "Crew parking is in Lot C (East side, off Service Road). Use the crew parking pass on your dashboard. Public Lot A/B are for attendees only — you will be towed after 9am.",
+      "tags": ["parking", "crew", "lot c", "car", "vehicle"]
     },
     {
       "id": "faq008",
-      "question": "Is there luggage storage?",
-      "answer": "Yes — luggage storage is at Coat Check, Hall A Level 1, near the main entrance. Free of charge.",
-      "tags": ["luggage", "storage", "coat check", "bags"]
+      "question": "How do I request additional AV equipment?",
+      "answer": "Submit an AV request via the ops channel with room name, equipment type, and time needed. Tag @av-ops. Requests within 30 minutes of session start are handled as best-effort only.",
+      "tags": ["av", "equipment", "request", "audio", "video", "projector", "mic"]
     },
     {
       "id": "faq009",
-      "question": "Where is the nearest ATM?",
-      "answer": "ATMs are in the lobby on Level 1 near the main entrance and in the food hall on Level 3.",
-      "tags": ["atm", "cash", "money"]
+      "question": "Where is the first-aid station?",
+      "answer": "First-aid station is on Level 1, Room 104 (next to the nursing room). A trained first-aider is on-site all day. For emergencies use the ops channel or call the direct safety line: ext. 999.",
+      "tags": ["first aid", "medical", "nurse", "room 104", "emergency"]
     },
     {
       "id": "faq010",
-      "question": "Where is the speaker ready room?",
-      "answer": "Speaker Ready Room is on Level 2, Room 202. Open from 7am. AV technician on-site. Bring your slides on USB or upload via the speaker portal.",
-      "tags": ["speaker", "ready room", "slides", "presentation"]
+      "question": "What is the radio channel assignment for crew?",
+      "answer": "Channel 1: Room Ops / Captains. Channel 2: AV Technicians. Channel 3: Vendor / Logistics. Channel 4: Safety Lead (monitor only). All-crew announcements on Channel 1.",
+      "tags": ["radio", "channel", "walkie", "comms", "assignment"]
+    },
+    {
+      "id": "faq011",
+      "question": "Where is the loading dock?",
+      "answer": "Loading Dock is on the North side of the building, off Industrial Road. Dock A for AV/equipment, Dock B for catering, Dock C for furniture/misc. Gate code: 7743.",
+      "tags": ["loading dock", "dock", "delivery", "entrance", "north side"]
+    },
+    {
+      "id": "faq012",
+      "question": "What is the escalation path for a safety incident?",
+      "answer": "1) Report immediately to the ops channel. 2) Call the safety lead direct line: ext. 911. 3) Do NOT attempt to handle a safety incident alone. The agent will page the safety lead automatically when safety keywords are detected.",
+      "tags": ["safety", "escalation", "incident", "emergency", "procedure"]
     }
   ]
 }
