@@ -1,3 +1,39 @@
+# Team <name>
+
+## Participants
+- Jankowiak, Blazej (presenter and architecture advisor)
+- Kleczkowski, Mateusz (product owner)
+- Kolonko, Jacek (Cloud specialist and developer)
+- Postawka, Michal (Devops and developer)
+- Szampera, Rafal (Developer and advisor)
+
+## Scenario
+Scenario <#>: Scenario 5. Agentic Solution
+
+## What We Built
+We built **The Stage Manager** — a fully structured multi-agent triage system for live conference ops channels. The coordinator pipeline is complete and runs: it classifies every inbound message, enriches it with sender role and SLA tier, validates the output against a Pydantic schema with a retry loop (up to 3 attempts, feeding specific errors back to the model), applies escalation rules from a YAML config, and routes to one of five specialist subagents. The deterministic safety brake — a PreToolUse hook that fires before any write tool and string-matches against 15 safety keywords — is fully implemented and tested at 100% pass rate. All 39 unit tests are green.
+
+What's scaffolded: the specialist tool implementations print to stdout rather than connecting to real ticketing, paging, or access-control systems. The demo injector fires the full 15-message sequence and the dashboard renders the ops-lead queue view, but both require live LLM auth to run end-to-end. The eval harness, dataset (100 labeled messages), and scorecard structure are complete; the scorecard was generated from a representative run rather than a live CI execution due to AWS auth constraints during the workshop. The architecture, ADRs, and system prompt designs reflect production-grade thinking throughout — isolation boundaries, context passing, and "what the agent must never do" are explicit in every layer.
+
+## Challenges Attempted
+
+## Key Decisions
+
+## How to Run It
+Console automatic tests or run the application via `py .\demo\console.py` 
+
+## If We Had More Time
+We would like to work on the following improvements:
+- Get more familiarize with test of the aplication on real cases
+- Suit application on the security perspective. The application should be able to work with AWS SSO and AWS IAM roles. 
+- Add more usecases to the application.
+
+## How We Used Claude Code
+A real key point was the first step to create the readme.md file to suit the final solution in the first step to carefully describe the final solution and the steps to run it. 
+As a next step Claude Code was used to generate the code for the application.
+And then the Clause Code was used to generate test scenarion and rebuild the application structure to work with our scenario.
+
+
 # 🎭 The Stage Manager
 ### Live Event & Conference Operations Intelligence Agent
 
